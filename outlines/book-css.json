@@ -1,0 +1,444 @@
+{
+  "title": "CSS Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to CSS",
+      "sections": [
+        {"title": "What is CSS?"},
+        {"title": "How CSS Works"},
+        {
+          "title": "CSS Syntax",
+          "subtopics": [
+            "Selectors",
+            "Properties",
+            "Values",
+            "Declarations",
+            "Rulesets"
+          ]
+        },
+        {
+          "title": "Types of CSS",
+          "subtopics": [
+            "Inline CSS",
+            "Internal CSS",
+            "External CSS"
+          ]
+        },
+        {"title": "CSS Comments"}
+      ]
+    },
+    {
+      "title": "Selectors and Specificity",
+      "sections": [
+        {
+          "title": "Basic Selectors",
+          "subtopics": [
+            "Element Selector",
+            "Class Selector",
+            "ID Selector"
+          ]
+        },
+        {
+          "title": "Advanced Selectors",
+          "subtopics": [
+            "Attribute Selectors",
+            "Pseudo-classes",
+            "Pseudo-elements"
+          ]
+        },
+        {
+          "title": "Combinators",
+          "subtopics": [
+            "Descendant Selector",
+            "Child Selector",
+            "Adjacent Sibling",
+            "General Sibling"
+          ]
+        },
+        {
+          "title": "Specificity Rules",
+          "subtopics": [
+            "Specificity Calculation",
+            "Inheritance",
+            "!important Usage"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Colors, Units, and Backgrounds",
+      "sections": [
+        {
+          "title": "Color Systems",
+          "subtopics": [
+            "HEX",
+            "RGB",
+            "RGBA",
+            "HSL",
+            "HSLA"
+          ]
+        },
+        {
+          "title": "CSS Units",
+          "subtopics": [
+            "px",
+            "em",
+            "rem",
+            "%",
+            "vw",
+            "vh"
+          ]
+        },
+        {
+          "title": "Background Properties",
+          "subtopics": [
+            "Background Color",
+            "Background Image",
+            "Gradients",
+            "Background Position",
+            "Background Size",
+            "Background Repeat"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Box Model",
+      "sections": [
+        {
+          "title": "Box Model Fundamentals",
+          "subtopics": [
+            "Content",
+            "Padding",
+            "Border",
+            "Margin"
+          ]
+        },
+        {
+          "title": "Box Sizing",
+          "subtopics": [
+            "content-box",
+            "border-box"
+          ]
+        },
+        {
+          "title": "Advanced Box Model",
+          "subtopics": [
+            "Margin Collapsing",
+            "Overflow Handling"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Typography and Text Styling",
+      "sections": [
+        {
+          "title": "Fonts",
+          "subtopics": [
+            "Web-safe Fonts",
+            "Custom Fonts",
+            "@font-face",
+            "Google Fonts"
+          ]
+        },
+        {
+          "title": "Text Properties",
+          "subtopics": [
+            "Text Alignment",
+            "Line Height",
+            "Letter Spacing",
+            "Text Transform",
+            "Text Decoration"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Layout Fundamentals",
+      "sections": [
+        {
+          "title": "Display Property",
+          "subtopics": [
+            "block",
+            "inline",
+            "inline-block",
+            "none"
+          ]
+        },
+        {
+          "title": "Positioning",
+          "subtopics": [
+            "static",
+            "relative",
+            "absolute",
+            "fixed",
+            "sticky"
+          ]
+        },
+        {
+          "title": "Float and Clear",
+          "subtopics": [
+            "float",
+            "clear",
+            "clearfix"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flexbox Layout",
+      "sections": [
+        {
+          "title": "Flex Container and Items",
+          "subtopics": [
+            "Main Axis",
+            "Cross Axis",
+            "Flex Direction"
+          ]
+        },
+        {
+          "title": "Flex Properties",
+          "subtopics": [
+            "justify-content",
+            "align-items",
+            "align-content",
+            "flex-wrap",
+            "gap"
+          ]
+        },
+        {"title": "Building Layouts with Flexbox"}
+      ]
+    },
+    {
+      "title": "CSS Grid Layout",
+      "sections": [
+        {
+          "title": "Grid Basics",
+          "subtopics": [
+            "Grid Container",
+            "Grid Items",
+            "Rows and Columns"
+          ]
+        },
+        {
+          "title": "Grid Advanced",
+          "subtopics": [
+            "Grid Areas",
+            "Auto Placement",
+            "Responsive Grid"
+          ]
+        },
+        {"title": "Grid vs Flexbox"}
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "sections": [
+        {
+          "title": "Media Queries",
+          "subtopics": [
+            "Breakpoints",
+            "Mobile First",
+            "Desktop First"
+          ]
+        },
+        {
+          "title": "Fluid Layouts",
+          "subtopics": [
+            "Flexible Units",
+            "Responsive Images"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transitions and Animations",
+      "sections": [
+        {
+          "title": "Transitions",
+          "subtopics": [
+            "Duration",
+            "Timing Functions",
+            "Delay"
+          ]
+        },
+        {
+          "title": "Animations",
+          "subtopics": [
+            "@keyframes",
+            "Animation Properties"
+          ]
+        },
+        {
+          "title": "Transforms",
+          "subtopics": [
+            "translate",
+            "scale",
+            "rotate",
+            "skew"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced CSS",
+      "sections": [
+        {
+          "title": "CSS Variables",
+          "subtopics": [
+            "Custom Properties",
+            "Scope",
+            "Fallbacks"
+          ]
+        },
+        {
+          "title": "Functions",
+          "subtopics": [
+            "calc()",
+            "clamp()",
+            "min()",
+            "max()"
+          ]
+        },
+        {
+          "title": "Visual Effects",
+          "subtopics": [
+            "Filters",
+            "Shadows",
+            "Clip-path",
+            "Masking"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CSS Architecture and Best Practices",
+      "sections": [
+        {
+          "title": "Naming Conventions",
+          "subtopics": [
+            "BEM",
+            "Utility-first Naming"
+          ]
+        },
+        {
+          "title": "Code Organization",
+          "subtopics": [
+            "File Structure",
+            "Component-based CSS"
+          ]
+        },
+        {
+          "title": "Maintainability",
+          "subtopics": [
+            "Avoiding Specificity Issues",
+            "Reusable Components"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tools and Ecosystem",
+      "sections": [
+        {
+          "title": "Preprocessors",
+          "subtopics": [
+            "Sass",
+            "SCSS"
+          ]
+        },
+        {
+          "title": "Post-processing",
+          "subtopics": [
+            "PostCSS",
+            "Autoprefixer"
+          ]
+        },
+        {"title": "Browser DevTools"}
+      ]
+    },
+    {
+      "title": "Frameworks and Libraries",
+      "sections": [
+        {
+          "title": "Utility-first Frameworks",
+          "subtopics": [
+            "Tailwind CSS"
+          ]
+        },
+        {
+          "title": "Component Frameworks",
+          "subtopics": [
+            "Bootstrap"
+          ]
+        },
+        {"title": "When to Use Frameworks"}
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "Optimization Techniques",
+          "subtopics": [
+            "Minification",
+            "Critical CSS",
+            "Reducing Reflows",
+            "Reducing Repaints"
+          ]
+        },
+        {"title": "Lazy Loading Styles"}
+      ]
+    },
+    {
+      "title": "Accessibility (A11Y)",
+      "sections": [
+        {
+          "title": "Accessibility Basics",
+          "subtopics": [
+            "Color Contrast",
+            "Focus States",
+            "Readable Typography"
+          ]
+        },
+        {"title": "Screen Reader Support"}
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Building a Landing Page",
+          "subtopics": [
+            "Hero Section",
+            "Features Section",
+            "Footer"
+          ]
+        },
+        {
+          "title": "Dashboard UI",
+          "subtopics": [
+            "Sidebar",
+            "Cards",
+            "Tables"
+          ]
+        },
+        {"title": "Responsive Blog Layout"}
+      ]
+    },
+    {
+      "title": "Future of CSS",
+      "sections": [
+        {
+          "title": "Modern Features",
+          "subtopics": [
+            "Container Queries",
+            ":has() Selector",
+            "New CSS Specs"
+          ]
+        }
+      ]
+    }
+  ]
+}

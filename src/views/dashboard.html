@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Generator — Dashboard</title>
+    <style>
+        /* ── Reset & Base ──────────────────────────────────────────────────── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #22263a;
+            --border: #2e3354;
+            --accent: #6c63ff;
+            --accent2: #48bb78;
+            --warn: #ed8936;
+            --danger: #fc5c5c;
+            --text: #e2e8f0;
+            --muted: #718096;
+            --radius: 10px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-size: 14px;
+            min-height: 100vh;
+        }
+
+        /* ── Header ─────────────────────────────────────────────────────────── */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 32px;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            font-size: 22px;
+        }
+
+        .app-title {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .app-subtitle {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 2px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .refresh-badge {
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        /* ── Main Layout ─────────────────────────────────────────────────────── */
+        main {
+            padding: 32px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ── Summary Bar ─────────────────────────────────────────────────────── */
+        .summary-bar {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 24px;
+            flex: 1;
+            min-width: 140px;
+        }
+
+        .stat-card .label {
+            font-size: 11px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .stat-card .value {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        .stat-card .value.accent {
+            color: var(--accent);
+        }
+
+        .stat-card .value.green {
+            color: var(--accent2);
+        }
+
+        .stat-card .value.orange {
+            color: var(--warn);
+        }
+
+        /* ── Books Grid ──────────────────────────────────────────────────────── */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+            gap: 24px;
+        }
+
+        .book-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        .book-card:hover {
+            border-color: var(--accent);
+        }
+
+        .book-header {
+            padding: 20px 20px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .book-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .book-id {
+            font-size: 11px;
+            color: var(--muted);
+            font-family: monospace;
+        }
+
+        .progress-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .progress-bar-wrap {
+            flex: 1;
+            height: 6px;
+            background: var(--surface2);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-label {
+            font-size: 12px;
+            color: var(--muted);
+            white-space: nowrap;
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .pct-badge {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent2);
+            min-width: 38px;
+            text-align: right;
+        }
+
+        /* ── Chapter List ────────────────────────────────────────────────────── */
+        .chapters-list {
+            padding: 8px 0;
+        }
+
+        .chapter-item {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .chapter-item:last-child {
+            border-bottom: none;
+        }
+
+        .chapter-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.15s;
+        }
+
+        .chapter-toggle:hover {
+            background: var(--surface2);
+        }
+
+        .chapter-name {
+            font-size: 13px;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .chapter-stat {
+            font-size: 11px;
+            color: var(--muted);
+            margin-right: 10px;
+        }
+
+        .chevron {
+            font-size: 10px;
+            color: var(--muted);
+            transition: transform 0.2s;
+        }
+
+        .chapter-item.open .chevron {
+            transform: rotate(90deg);
+        }
+
+        .sections-list {
+            display: none;
+            padding: 4px 20px 12px 36px;
+            background: var(--surface2);
+        }
+
+        .chapter-item.open .sections-list {
+            display: block;
+        }
+
+        .section-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .section-row:last-child {
+            border-bottom: none;
+        }
+
+        .status-icon {
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-size: 12px;
+            color: var(--text);
+        }
+
+        .section-title.done {
+            color: var(--accent2);
+        }
+
+        .section-title.pending {
+            color: var(--muted);
+        }
+
+        /* ── Loading / Error states ──────────────────────────────────────────── */
+        .loading {
+            text-align: center;
+            padding: 80px 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 12px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .error-msg {
+            background: rgba(252, 92, 92, 0.1);
+            border: 1px solid var(--danger);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            color: var(--danger);
+            margin-bottom: 24px;
+        }
+
+        /* ── Footer ──────────────────────────────────────────────────────────── */
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: var(--muted);
+            font-size: 12px;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ── Header ──────────────────────────────────────────────────────────── -->
+    <header>
+        <div class="header-left">
+            <span class="logo">📚</span>
+            <div>
+                <div class="app-title">Book Generator</div>
+                <div class="app-subtitle">Ollama-powered documentation engine</div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="refresh-badge">
+                <div class="dot"></div>
+                <span id="refresh-label">Refreshing in 10s</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ── Main ────────────────────────────────────────────────────────────── -->
+    <main>
+        <div id="error-area"></div>
+
+        <!-- Summary stats -->
+        <div class="summary-bar" id="summary-bar">
+            <div class="stat-card">
+                <div class="label">Books</div>
+                <div class="value accent" id="s-books">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Total Sections</div>
+                <div class="value" id="s-total">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Completed</div>
+                <div class="value green" id="s-done">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Remaining</div>
+                <div class="value orange" id="s-remaining">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Overall Progress</div>
+                <div class="value accent" id="s-pct">—</div>
+            </div>
+        </div>
+
+        <!-- Books grid -->
+        <div id="content">
+            <div class="loading">
+                <div>
+                    <div class="spinner"></div>
+                </div>
+                Loading book status…
+            </div>
+        </div>
+    </main>
+
+    <footer>Auto-refreshes every 10 seconds &nbsp;·&nbsp; <span id="last-updated">—</span></footer>
+
+    <script>
+        // ── State ───────────────────────────────────────────────────────────────
+        let countdown = 10;
+        let openChapters = new Set(); // track which chapters the user expanded
+
+        // ── Fetch & Render ──────────────────────────────────────────────────────
+        async function fetchStatus() {
+            try {
+                const res = await fetch("/api/status");
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                renderDashboard(data);
+                document.getElementById("error-area").innerHTML = "";
+            } catch (err) {
+                document.getElementById("error-area").innerHTML =
+                    `<div class="error-msg">⚠️ Could not load status: ${err.message}</div>`;
+            }
+        }
+
+        function renderDashboard({ books, updatedAt }) {
+            // ── Summary ────────────────────────────────────────────────────────
+            const totalSections = books.reduce((s, b) => s + b.total, 0);
+            const totalDone = books.reduce((s, b) => s + b.completed, 0);
+            const totalRemain = totalSections - totalDone;
+            const overallPct = totalSections > 0 ? Math.round((totalDone / totalSections) * 100) : 0;
+
+            document.getElementById("s-books").textContent = books.length;
+            document.getElementById("s-total").textContent = totalSections;
+            document.getElementById("s-done").textContent = totalDone;
+            document.getElementById("s-remaining").textContent = totalRemain;
+            document.getElementById("s-pct").textContent = `${overallPct}%`;
+
+            if (updatedAt) {
+                const d = new Date(updatedAt);
+                document.getElementById("last-updated").textContent =
+                    `Last updated: ${d.toLocaleTimeString()}`;
+            }
+
+            // ── Book cards ─────────────────────────────────────────────────────
+            const html = books.map(book => renderBookCard(book)).join("");
+            document.getElementById("content").innerHTML =
+                `<div class="books-grid">${html}</div>`;
+
+            // Re-attach expand/collapse listeners
+            document.querySelectorAll(".chapter-toggle").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const item = btn.closest(".chapter-item");
+                    const key = btn.dataset.key;
+                    item.classList.toggle("open");
+                    if (item.classList.contains("open")) openChapters.add(key);
+                    else openChapters.delete(key);
+                });
+                // Re-open chapters that were open before refresh
+                const item = btn.closest(".chapter-item");
+                if (openChapters.has(btn.dataset.key)) item.classList.add("open");
+            });
+        }
+
+        function renderBookCard(book) {
+            const fillWidth = book.percent;
+            const chaptersHtml = book.chapters.map((ch, ci) => {
+                const chKey = `${book.bookId}::${ci}`;
+                const doneSecs = ch.sections.filter(s => s.done).length;
+                const totalSecs = ch.sections.length;
+                const sectionsHtml = ch.sections.map(sec => {
+                    const cls = sec.done ? "done" : "pending";
+                    const icon = sec.done ? "✅" : "⬜";
+                    return `
+          <div class="section-row">
+            <span class="status-icon">${icon}</span>
+            <span class="section-title ${cls}">${escHtml(sec.title)}</span>
+          </div>`;
+                }).join("");
+
+                return `
+        <div class="chapter-item">
+          <div class="chapter-toggle" data-key="${escHtml(chKey)}">
+            <span class="chapter-name">${escHtml(ch.title)}</span>
+            <span class="chapter-stat">${doneSecs}/${totalSecs}</span>
+            <span class="chevron">▶</span>
+          </div>
+          <div class="sections-list">${sectionsHtml}</div>
+        </div>`;
+            }).join("");
+
+            return `
+      <div class="book-card">
+        <div class="book-header">
+          <div class="book-title">${escHtml(book.title)}</div>
+          <div class="book-id">${escHtml(book.bookId)}</div>
+          <div class="progress-row">
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" style="width: ${fillWidth}%"></div>
+            </div>
+            <div class="pct-badge">${book.percent}%</div>
+            <div class="progress-label">${book.completed} / ${book.total}</div>
+          </div>
+        </div>
+        <div class="chapters-list">${chaptersHtml}</div>
+      </div>`;
+        }
+
+        function escHtml(str) {
+            return String(str)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;");
+        }
+
+        // ── Countdown ───────────────────────────────────────────────────────────
+        function tick() {
+            countdown--;
+            document.getElementById("refresh-label").textContent =
+                countdown <= 0 ? "Refreshing…" : `Refreshing in ${countdown}s`;
+            if (countdown <= 0) {
+                countdown = 10;
+                fetchStatus();
+            }
+        }
+
+        // ── Boot ────────────────────────────────────────────────────────────────
+        fetchStatus();
+        setInterval(tick, 1000);
+    </script>
+</body>
+
+</html>

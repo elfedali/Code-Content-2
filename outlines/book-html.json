@@ -1,0 +1,360 @@
+{
+  "title": "HTML5 Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to HTML5",
+      "sections": [
+        {"title": "What is HTML?"},
+        {"title": "History of HTML and HTML5"},
+        {
+          "title": "How the Web Works",
+          "subtopics": [
+            "Client-Server Model",
+            "Browsers",
+            "HTTP/HTTPS Basics"
+          ]
+        },
+        {
+          "title": "Basic Structure of an HTML Document",
+          "subtopics": [
+            "<!DOCTYPE html>",
+            "<html>",
+            "<head>",
+            "<body>"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "HTML Syntax and Elements",
+      "sections": [
+        {
+          "title": "Tags and Elements",
+          "subtopics": [
+            "Opening and Closing Tags",
+            "Self-closing Tags",
+            "Nesting Elements"
+          ]
+        },
+        {
+          "title": "Attributes",
+          "subtopics": [
+            "Global Attributes",
+            "id and class",
+            "data-* Attributes"
+          ]
+        },
+        {"title": "Comments in HTML"}
+      ]
+    },
+    {
+      "title": "Text Content and Formatting",
+      "sections": [
+        {
+          "title": "Headings and Paragraphs",
+          "subtopics": [
+            "<h1> to <h6>",
+            "<p>"
+          ]
+        },
+        {
+          "title": "Text Formatting Tags",
+          "subtopics": [
+            "<strong>",
+            "<em>",
+            "<b>",
+            "<i>",
+            "<mark>",
+            "<small>"
+          ]
+        },
+        {
+          "title": "Lists",
+          "subtopics": [
+            "Ordered Lists <ol>",
+            "Unordered Lists <ul>",
+            "Definition Lists <dl>"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Links and Navigation",
+      "sections": [
+        {
+          "title": "Anchor Tag",
+          "subtopics": [
+            "href Attribute",
+            "Absolute vs Relative URLs",
+            "Opening Links in New Tab"
+          ]
+        },
+        {
+          "title": "Navigation Menus",
+          "subtopics": [
+            "<nav>",
+            "Building Menus",
+            "Accessibility in Navigation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Images and Media",
+      "sections": [
+        {
+          "title": "Images",
+          "subtopics": [
+            "<img>",
+            "alt Attribute",
+            "Responsive Images"
+          ]
+        },
+        {
+          "title": "Audio and Video",
+          "subtopics": [
+            "<audio>",
+            "<video>",
+            "Controls and Attributes"
+          ]
+        },
+        {
+          "title": "Embedding Content",
+          "subtopics": [
+            "<iframe>",
+            "Embedding Maps and Videos"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Forms and Input",
+      "sections": [
+        {
+          "title": "Form Basics",
+          "subtopics": [
+            "<form>",
+            "action and method"
+          ]
+        },
+        {
+          "title": "Input Types",
+          "subtopics": [
+            "text",
+            "email",
+            "password",
+            "number",
+            "date",
+            "checkbox",
+            "radio"
+          ]
+        },
+        {
+          "title": "Form Elements",
+          "subtopics": [
+            "<label>",
+            "<textarea>",
+            "<select>",
+            "<button>"
+          ]
+        },
+        {
+          "title": "Validation",
+          "subtopics": [
+            "required",
+            "pattern",
+            "min and max"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Semantic HTML",
+      "sections": [
+        {
+          "title": "Why Semantic HTML Matters",
+          "subtopics": [
+            "Accessibility",
+            "SEO",
+            "Maintainability"
+          ]
+        },
+        {
+          "title": "Semantic Elements",
+          "subtopics": [
+            "<header>",
+            "<footer>",
+            "<article>",
+            "<section>",
+            "<aside>",
+            "<main>"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tables",
+      "sections": [
+        {
+          "title": "Table Structure",
+          "subtopics": [
+            "<table>",
+            "<tr>",
+            "<td>",
+            "<th>"
+          ]
+        },
+        {
+          "title": "Advanced Tables",
+          "subtopics": [
+            "<thead>",
+            "<tbody>",
+            "<tfoot>",
+            "colspan",
+            "rowspan"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multimedia and Graphics",
+      "sections": [
+        {
+          "title": "Canvas API",
+          "subtopics": [
+            "<canvas>",
+            "Drawing Shapes",
+            "Basic Animations"
+          ]
+        },
+        {
+          "title": "SVG",
+          "subtopics": [
+            "Scalable Vector Graphics",
+            "Shapes and Paths"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "APIs and Advanced Features",
+      "sections": [
+        {
+          "title": "Web Storage",
+          "subtopics": [
+            "localStorage",
+            "sessionStorage"
+          ]
+        },
+        {
+          "title": "Geolocation API"},
+        {
+          "title": "Drag and Drop API"},
+        {
+          "title": "Web Workers"}
+      ]
+    },
+    {
+      "title": "Accessibility (A11Y)",
+      "sections": [
+        {
+          "title": "Accessibility Basics",
+          "subtopics": [
+            "ARIA Roles",
+            "Keyboard Navigation",
+            "Alt Text"
+          ]
+        },
+        {"title": "Best Practices"}
+      ]
+    },
+    {
+      "title": "SEO and Metadata",
+      "sections": [
+        {
+          "title": "Meta Tags",
+          "subtopics": [
+            "description",
+            "keywords",
+            "viewport"
+          ]
+        },
+        {
+          "title": "Open Graph",
+          "subtopics": [
+            "Social Sharing Tags"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Minimize DOM Size",
+            "Lazy Loading Images",
+            "Efficient Markup"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Integration with CSS and JavaScript",
+      "sections": [
+        {
+          "title": "Linking CSS",
+          "subtopics": [
+            "<link>",
+            "<style>"
+          ]
+        },
+        {
+          "title": "Using JavaScript",
+          "subtopics": [
+            "<script>",
+            "defer",
+            "async"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Portfolio Website",
+          "subtopics": [
+            "Header",
+            "About Section",
+            "Projects Section",
+            "Contact Form"
+          ]
+        },
+        {
+          "title": "Landing Page",
+          "subtopics": [
+            "Hero Section",
+            "Features",
+            "Call to Action"
+          ]
+        },
+        {"title": "Blog Layout"}
+      ]
+    },
+    {
+      "title": "Future of HTML",
+      "sections": [
+        {
+          "title": "New Features",
+          "subtopics": [
+            "Web Components",
+            "Custom Elements",
+            "Shadow DOM"
+          ]
+        }
+      ]
+    }
+  ]
+}

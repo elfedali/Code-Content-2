@@ -1,0 +1,391 @@
+{
+  "title": "Node.js Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to Node.js",
+      "sections": [
+        {"title": "What is Node.js?"},
+        {
+          "title": "Why Use Node.js?",
+          "subtopics": [
+            "Non-blocking I/O",
+            "Event-driven Architecture",
+            "JavaScript Everywhere",
+            "Scalability"
+          ]
+        },
+        {
+          "title": "How Node.js Works",
+          "subtopics": [
+            "V8 Engine",
+            "Event Loop",
+            "Single-threaded Model"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Installing Node.js",
+            "Using npm",
+            "Project Initialization"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Node.js Fundamentals",
+      "sections": [
+        {
+          "title": "Modules System",
+          "subtopics": [
+            "CommonJS (require)",
+            "ES Modules (import/export)",
+            "Module Scope"
+          ]
+        },
+        {
+          "title": "Global Objects",
+          "subtopics": [
+            "global",
+            "__dirname",
+            "__filename",
+            "process"
+          ]
+        },
+        {
+          "title": "Working with Files",
+          "subtopics": [
+            "fs module",
+            "Reading Files",
+            "Writing Files"
+          ]
+        },
+        {
+          "title": "Path and OS Modules",
+          "subtopics": [
+            "path module",
+            "os module"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asynchronous Programming",
+      "sections": [
+        {
+          "title": "Callbacks",
+          "subtopics": [
+            "Callback Pattern",
+            "Error-first Callbacks"
+          ]
+        },
+        {
+          "title": "Promises",
+          "subtopics": [
+            "Creating Promises",
+            "Chaining",
+            "Error Handling"
+          ]
+        },
+        {
+          "title": "Async/Await",
+          "subtopics": [
+            "Writing Async Code",
+            "Handling Errors"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Building HTTP Servers",
+      "sections": [
+        {
+          "title": "http Module",
+          "subtopics": [
+            "Creating Server",
+            "Handling Requests",
+            "Sending Responses"
+          ]
+        },
+        {
+          "title": "Routing Basics",
+          "subtopics": [
+            "URL Handling",
+            "Methods (GET, POST, PUT, DELETE)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Express.js Framework",
+      "sections": [
+        {
+          "title": "Introduction to Express",
+          "subtopics": [
+            "Setting up Express App",
+            "Basic Routing"
+          ]
+        },
+        {
+          "title": "Middleware",
+          "subtopics": [
+            "Built-in Middleware",
+            "Custom Middleware",
+            "Third-party Middleware"
+          ]
+        },
+        {
+          "title": "Handling Requests and Responses",
+          "subtopics": [
+            "req and res Objects",
+            "Sending JSON",
+            "Status Codes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "REST API Development",
+      "sections": [
+        {
+          "title": "Designing APIs",
+          "subtopics": [
+            "REST Principles",
+            "Endpoints Structure"
+          ]
+        },
+        {
+          "title": "CRUD Operations",
+          "subtopics": [
+            "Create",
+            "Read",
+            "Update",
+            "Delete"
+          ]
+        },
+        {
+          "title": "Validation",
+          "subtopics": [
+            "Input Validation",
+            "Using Libraries"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with Databases",
+      "sections": [
+        {
+          "title": "Using MongoDB",
+          "subtopics": [
+            "Connecting to Database",
+            "CRUD Operations",
+            "Mongoose ODM"
+          ]
+        },
+        {
+          "title": "Using SQL Databases",
+          "subtopics": [
+            "MySQL",
+            "PostgreSQL",
+            "ORM Integration"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Authentication and Security",
+      "sections": [
+        {
+          "title": "Authentication",
+          "subtopics": [
+            "JWT",
+            "Sessions",
+            "OAuth Basics"
+          ]
+        },
+        {
+          "title": "Security Best Practices",
+          "subtopics": [
+            "Hashing Passwords",
+            "Rate Limiting",
+            "CORS",
+            "Helmet"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "File Uploads and Streams",
+      "sections": [
+        {
+          "title": "Handling File Uploads",
+          "subtopics": [
+            "multer",
+            "File Storage"
+          ]
+        },
+        {
+          "title": "Streams",
+          "subtopics": [
+            "Readable Streams",
+            "Writable Streams",
+            "Pipes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real-time Applications",
+      "sections": [
+        {
+          "title": "WebSockets",
+          "subtopics": [
+            "Socket.io",
+            "Real-time Communication"
+          ]
+        },
+        {
+          "title": "Building Chat Apps"}
+      ]
+    },
+    {
+      "title": "Testing",
+      "sections": [
+        {
+          "title": "Testing Basics",
+          "subtopics": [
+            "Unit Testing",
+            "Integration Testing"
+          ]
+        },
+        {
+          "title": "Testing Tools",
+          "subtopics": [
+            "Jest",
+            "Mocha",
+            "Supertest"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Scaling",
+      "sections": [
+        {
+          "title": "Optimization Techniques",
+          "subtopics": [
+            "Caching",
+            "Compression",
+            "Clustering"
+          ]
+        },
+        {
+          "title": "Scaling Applications",
+          "subtopics": [
+            "Load Balancing",
+            "Microservices"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deployment and DevOps",
+      "sections": [
+        {
+          "title": "Environment Configuration",
+          "subtopics": [
+            "Environment Variables",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "Deployment",
+          "subtopics": [
+            "Docker",
+            "CI/CD",
+            "Cloud Hosting"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tooling and Ecosystem",
+      "sections": [
+        {
+          "title": "Package Management",
+          "subtopics": [
+            "npm",
+            "yarn",
+            "pnpm"
+          ]
+        },
+        {
+          "title": "Development Tools",
+          "subtopics": [
+            "nodemon",
+            "eslint",
+            "prettier"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Architecture and Best Practices",
+      "sections": [
+        {
+          "title": "Project Structure",
+          "subtopics": [
+            "MVC Pattern",
+            "Modular Structure"
+          ]
+        },
+        {
+          "title": "Code Quality",
+          "subtopics": [
+            "Error Handling",
+            "Logging",
+            "Clean Code"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "REST API for SaaS",
+          "subtopics": [
+            "Authentication",
+            "Multi-tenant Design"
+          ]
+        },
+        {
+          "title": "Chat Application",
+          "subtopics": [
+            "Real-time Messaging"
+          ]
+        },
+        {
+          "title": "File Upload Service",
+          "subtopics": [
+            "Cloud Storage Integration"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of Node.js",
+      "sections": [
+        {
+          "title": "Emerging Trends",
+          "subtopics": [
+            "Deno",
+            "Edge Computing",
+            "Serverless"
+          ]
+        }
+      ]
+    }
+  ]
+}

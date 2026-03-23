@@ -1,0 +1,406 @@
+{
+  "title": "JavaScript Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to JavaScript",
+      "sections": [
+        {"title": "What is JavaScript?"},
+        {"title": "History and Evolution"},
+        {
+          "title": "How JavaScript Works",
+          "subtopics": [
+            "Browser Engines",
+            "JavaScript Runtime",
+            "Single-threaded Nature",
+            "Event Loop Basics"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Browser Console",
+            "Node.js",
+            "Code Editors"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JavaScript Basics",
+      "sections": [
+        {
+          "title": "Syntax and Variables",
+          "subtopics": [
+            "var, let, const",
+            "Naming Rules",
+            "Hoisting"
+          ]
+        },
+        {
+          "title": "Data Types",
+          "subtopics": [
+            "Primitive Types",
+            "Reference Types",
+            "Dynamic Typing"
+          ]
+        },
+        {
+          "title": "Operators",
+          "subtopics": [
+            "Arithmetic",
+            "Comparison",
+            "Logical",
+            "Assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Control Flow",
+      "sections": [
+        {
+          "title": "Conditional Statements",
+          "subtopics": [
+            "if / else",
+            "switch",
+            "Ternary Operator"
+          ]
+        },
+        {
+          "title": "Loops",
+          "subtopics": [
+            "for",
+            "while",
+            "do...while",
+            "for...in",
+            "for...of"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "sections": [
+        {
+          "title": "Function Basics",
+          "subtopics": [
+            "Function Declaration",
+            "Function Expression",
+            "Arrow Functions"
+          ]
+        },
+        {
+          "title": "Advanced Functions",
+          "subtopics": [
+            "Closures",
+            "Callbacks",
+            "Higher-order Functions"
+          ]
+        },
+        {
+          "title": "this Keyword",
+          "subtopics": [
+            "Global Context",
+            "Object Context",
+            "Arrow Function Behavior"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Objects and Arrays",
+      "sections": [
+        {
+          "title": "Objects",
+          "subtopics": [
+            "Object Literals",
+            "Properties and Methods",
+            "Destructuring"
+          ]
+        },
+        {
+          "title": "Arrays",
+          "subtopics": [
+            "Array Methods",
+            "map, filter, reduce",
+            "Iteration Techniques"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DOM Manipulation",
+      "sections": [
+        {
+          "title": "The DOM",
+          "subtopics": [
+            "Document Object Model",
+            "Selecting Elements",
+            "Traversing DOM"
+          ]
+        },
+        {
+          "title": "Manipulating Elements",
+          "subtopics": [
+            "Changing Content",
+            "Styles",
+            "Attributes"
+          ]
+        },
+        {
+          "title": "Events",
+          "subtopics": [
+            "Event Listeners",
+            "Event Bubbling",
+            "Event Delegation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asynchronous JavaScript",
+      "sections": [
+        {
+          "title": "Async Concepts",
+          "subtopics": [
+            "Callbacks",
+            "Promises",
+            "Async/Await"
+          ]
+        },
+        {
+          "title": "Event Loop Deep Dive",
+          "subtopics": [
+            "Call Stack",
+            "Microtasks vs Macrotasks"
+          ]
+        },
+        {
+          "title": "Fetching Data",
+          "subtopics": [
+            "fetch API",
+            "Handling JSON",
+            "Error Handling"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Error Handling and Debugging",
+      "sections": [
+        {
+          "title": "Errors in JavaScript",
+          "subtopics": [
+            "Syntax Errors",
+            "Runtime Errors",
+            "Logical Errors"
+          ]
+        },
+        {
+          "title": "Handling Errors",
+          "subtopics": [
+            "try...catch",
+            "throw",
+            "finally"
+          ]
+        },
+        {"title": "Debugging Tools"}
+      ]
+    },
+    {
+      "title": "ES6+ Features",
+      "sections": [
+        {
+          "title": "Modern Syntax",
+          "subtopics": [
+            "Template Literals",
+            "Spread Operator",
+            "Rest Parameters"
+          ]
+        },
+        {
+          "title": "Modules",
+          "subtopics": [
+            "import/export",
+            "Default vs Named Exports"
+          ]
+        },
+        {
+          "title": "Classes",
+          "subtopics": [
+            "Constructor",
+            "Inheritance",
+            "Methods"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced JavaScript",
+      "sections": [
+        {
+          "title": "Prototypes and Inheritance",
+          "subtopics": [
+            "Prototype Chain",
+            "Object.create"
+          ]
+        },
+        {
+          "title": "Memory Management",
+          "subtopics": [
+            "Garbage Collection",
+            "Memory Leaks"
+          ]
+        },
+        {
+          "title": "Functional Programming",
+          "subtopics": [
+            "Pure Functions",
+            "Immutability",
+            "Composition"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Browser APIs",
+      "sections": [
+        {
+          "title": "Web Storage",
+          "subtopics": [
+            "localStorage",
+            "sessionStorage"
+          ]
+        },
+        {"title": "Geolocation API"},
+        {"title": "Canvas API"},
+        {"title": "Timers"}
+      ]
+    },
+    {
+      "title": "JavaScript in the Backend",
+      "sections": [
+        {
+          "title": "Node.js Basics",
+          "subtopics": [
+            "Modules",
+            "File System",
+            "Event-driven Architecture"
+          ]
+        },
+        {
+          "title": "Building APIs",
+          "subtopics": [
+            "Express.js",
+            "Routing",
+            "Middleware"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tooling and Ecosystem",
+      "sections": [
+        {
+          "title": "Package Managers",
+          "subtopics": [
+            "npm",
+            "yarn"
+          ]
+        },
+        {
+          "title": "Build Tools",
+          "subtopics": [
+            "Webpack",
+            "Vite",
+            "Babel"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "sections": [
+        {
+          "title": "Testing Basics",
+          "subtopics": [
+            "Unit Testing",
+            "Integration Testing"
+          ]
+        },
+        {
+          "title": "Testing Tools",
+          "subtopics": [
+            "Jest",
+            "Mocha"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "Optimization Techniques",
+          "subtopics": [
+            "Debouncing",
+            "Throttling",
+            "Code Splitting"
+          ]
+        },
+        {"title": "Lazy Loading"}
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Common Vulnerabilities",
+          "subtopics": [
+            "XSS",
+            "CSRF"
+          ]
+        },
+        {"title": "Best Practices"}
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Todo App",
+          "subtopics": [
+            "CRUD Operations",
+            "Local Storage"
+          ]
+        },
+        {
+          "title": "Weather App",
+          "subtopics": [
+            "API Integration",
+            "UI Updates"
+          ]
+        },
+        {
+          "title": "Dashboard App",
+          "subtopics": [
+            "Charts",
+            "Authentication"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of JavaScript",
+      "sections": [
+        {
+          "title": "New Proposals",
+          "subtopics": [
+            "TC39 Process",
+            "Upcoming Features"
+          ]
+        }
+      ]
+    }
+  ]
+}

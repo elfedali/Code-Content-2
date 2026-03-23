@@ -1,0 +1,56 @@
+{
+  "book.python": {
+    "completed": [
+      "Introduction to Python > What Are Python’s Technical Strengths?",
+      "Introduction to Python > How Does Python Stack Up to Language X?",
+      "Introduction to Python > How Python Runs Programs",
+      "Introduction to Python > How You Run Programs",
+      "Python Basics: Types and Operations > Introducing Python Object Types",
+      "Python Basics: Types and Operations > Numeric Types",
+      "Python Basics: Types and Operations > The Dynamic Typing Interlude",
+      "Python Basics: Types and Operations > Strings",
+      "Python Basics: Types and Operations > Tuples, Files, and Everything Else",
+      "Python Syntax and Statements > Introducing Python Statements",
+      "Python Syntax and Statements > if Tests and Syntax Rules",
+      "Python Syntax and Statements > Truth Tests",
+      "Python Syntax and Statements > while and for Loops",
+      "Python Syntax and Statements > Iterations and Comprehensions (Part 1)",
+      "Python Syntax and Statements > Documentation Interlude",
+      "Functions in Python > Function Basics",
+      "Functions in Python > Scopes",
+      "Functions in Python > Arguments",
+      "Functions in Python > Advanced Function Topics",
+      "Functions in Python > Iterations and Comprehensions (Part 2)",
+      "Modules and Packages > Modules — The Big Picture",
+      "Python Basics: Types and Operations > Lists and Dictionaries",
+      "Python Syntax and Statements > Assignments, Expressions, and Prints",
+      "Modules and Packages > Module Coding Basics",
+      "Modules and Packages > Module Packages",
+      "Modules and Packages > Advanced Module Topics",
+      "Object-Oriented Programming > Class Coding Basics",
+      "Python Syntax and Statements > A Tale of Two ifs",
+      "Object-Oriented Programming > OOP — The Big Picture",
+      "Object-Oriented Programming > A More Realistic Example",
+      "Object-Oriented Programming > Class Coding Details",
+      "Object-Oriented Programming > Operator Overloading",
+      "Object-Oriented Programming > Designing with Classes",
+      "Object-Oriented Programming > Advanced Class Topics",
+      "Exceptions and Error Handling > Exception Basics",
+      "Exceptions and Error Handling > Exception Coding Details",
+      "Exceptions and Error Handling > Exception Objects",
+      "Exceptions and Error Handling > Designing with Exceptions",
+      "Advanced Python Topics > Unicode and Byte Strings",
+      "Advanced Python Topics > Managed Attributes",
+      "Advanced Python Topics > Decorators",
+      "Advanced Python Topics > Metaclasses",
+      "Introduction to Python > Why Do People Use Python?",
+      "Introduction to Python > How Is Python Supported?",
+      "Advanced Python Topics > Using Text and Binary Files"
+    ]
+  },
+  "book-css": {
+    "completed": [
+      "Introduction to CSS > What is CSS?"
+    ]
+  }
+}

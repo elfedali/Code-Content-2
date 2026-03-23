@@ -1,0 +1,416 @@
+{
+  "title": "Linux Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to Linux",
+      "sections": [
+        {"title": "What is Linux?"},
+        {
+          "title": "History of Linux",
+          "subtopics": [
+            "Unix Origins",
+            "Linux Kernel",
+            "Open Source Movement"
+          ]
+        },
+        {
+          "title": "Linux Distributions",
+          "subtopics": [
+            "Ubuntu",
+            "Debian",
+            "Fedora",
+            "Arch Linux",
+            "CentOS"
+          ]
+        },
+        {
+          "title": "Installing Linux",
+          "subtopics": [
+            "Dual Boot",
+            "Virtual Machines",
+            "Cloud Instances"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started with the Terminal",
+      "sections": [
+        {
+          "title": "Command Line Basics",
+          "subtopics": [
+            "Shell Overview",
+            "Bash Basics",
+            "Command Syntax"
+          ]
+        },
+        {
+          "title": "Navigation Commands",
+          "subtopics": [
+            "pwd",
+            "ls",
+            "cd"
+          ]
+        },
+        {
+          "title": "File Operations",
+          "subtopics": [
+            "cp",
+            "mv",
+            "rm",
+            "touch",
+            "mkdir"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "File System and Permissions",
+      "sections": [
+        {
+          "title": "Linux File System",
+          "subtopics": [
+            "Directory Structure",
+            "/home",
+            "/etc",
+            "/var",
+            "/usr"
+          ]
+        },
+        {
+          "title": "Permissions",
+          "subtopics": [
+            "Read, Write, Execute",
+            "chmod",
+            "chown",
+            "chgrp"
+          ]
+        },
+        {
+          "title": "Links",
+          "subtopics": [
+            "Hard Links",
+            "Symbolic Links"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with Files",
+      "sections": [
+        {
+          "title": "Viewing Files",
+          "subtopics": [
+            "cat",
+            "less",
+            "head",
+            "tail"
+          ]
+        },
+        {
+          "title": "Searching",
+          "subtopics": [
+            "find",
+            "locate",
+            "grep"
+          ]
+        },
+        {
+          "title": "Compression",
+          "subtopics": [
+            "tar",
+            "gzip",
+            "zip"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Processes and System Monitoring",
+      "sections": [
+        {
+          "title": "Managing Processes",
+          "subtopics": [
+            "ps",
+            "top",
+            "htop",
+            "kill"
+          ]
+        },
+        {
+          "title": "System Monitoring",
+          "subtopics": [
+            "CPU Usage",
+            "Memory Usage",
+            "Disk Usage (df, du)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Package Management",
+      "sections": [
+        {
+          "title": "Package Managers",
+          "subtopics": [
+            "apt",
+            "yum",
+            "dnf",
+            "pacman"
+          ]
+        },
+        {
+          "title": "Installing and Updating Software",
+          "subtopics": [
+            "Install Packages",
+            "Update System",
+            "Remove Packages"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Users and Groups",
+      "sections": [
+        {
+          "title": "User Management",
+          "subtopics": [
+            "useradd",
+            "usermod",
+            "userdel"
+          ]
+        },
+        {
+          "title": "Groups",
+          "subtopics": [
+            "groupadd",
+            "groupmod",
+            "groupdel"
+          ]
+        },
+        {
+          "title": "Permissions and Security",
+          "subtopics": [
+            "sudo",
+            "Access Control"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Networking",
+      "sections": [
+        {
+          "title": "Network Basics",
+          "subtopics": [
+            "IP Address",
+            "DNS",
+            "Ports"
+          ]
+        },
+        {
+          "title": "Network Commands",
+          "subtopics": [
+            "ping",
+            "ifconfig / ip",
+            "netstat",
+            "curl",
+            "wget"
+          ]
+        },
+        {
+          "title": "SSH",
+          "subtopics": [
+            "Connecting to Servers",
+            "Key-based Authentication"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shell Scripting",
+      "sections": [
+        {
+          "title": "Bash Scripting Basics",
+          "subtopics": [
+            "Variables",
+            "Conditions",
+            "Loops"
+          ]
+        },
+        {
+          "title": "Advanced Scripting",
+          "subtopics": [
+            "Functions",
+            "Arguments",
+            "Automation Tasks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System Administration",
+      "sections": [
+        {
+          "title": "Services",
+          "subtopics": [
+            "systemctl",
+            "start/stop/restart services"
+          ]
+        },
+        {
+          "title": "Logs",
+          "subtopics": [
+            "journalctl",
+            "Log Files"
+          ]
+        },
+        {
+          "title": "Cron Jobs",
+          "subtopics": [
+            "Scheduling Tasks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Basic Security",
+          "subtopics": [
+            "Firewall (ufw, iptables)",
+            "User Permissions"
+          ]
+        },
+        {
+          "title": "Advanced Security",
+          "subtopics": [
+            "Fail2Ban",
+            "SSH Hardening"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Storage Management",
+      "sections": [
+        {
+          "title": "Disk Management",
+          "subtopics": [
+            "lsblk",
+            "fdisk",
+            "mount",
+            "umount"
+          ]
+        },
+        {
+          "title": "File Systems",
+          "subtopics": [
+            "ext4",
+            "xfs",
+            "btrfs"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Virtualization and Containers",
+      "sections": [
+        {
+          "title": "Virtual Machines",
+          "subtopics": [
+            "KVM",
+            "VirtualBox"
+          ]
+        },
+        {
+          "title": "Containers",
+          "subtopics": [
+            "Docker",
+            "Basic Container Management"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DevOps and Cloud",
+      "sections": [
+        {
+          "title": "Linux in Cloud",
+          "subtopics": [
+            "AWS",
+            "DigitalOcean",
+            "VPS Setup"
+          ]
+        },
+        {
+          "title": "Automation",
+          "subtopics": [
+            "Shell Scripts",
+            "CI/CD Basics"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "System Optimization",
+          "subtopics": [
+            "Resource Management",
+            "Process Optimization"
+          ]
+        },
+        {
+          "title": "Troubleshooting",
+          "subtopics": [
+            "Logs Analysis",
+            "Debugging Issues"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Setting up a Web Server",
+          "subtopics": [
+            "Nginx",
+            "Apache",
+            "Hosting Websites"
+          ]
+        },
+        {
+          "title": "Deploying a Node.js App",
+          "subtopics": [
+            "Process Managers",
+            "Reverse Proxy"
+          ]
+        },
+        {
+          "title": "Automating Backups",
+          "subtopics": [
+            "Cron Jobs",
+            "Scripts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of Linux",
+      "sections": [
+        {
+          "title": "Trends",
+          "subtopics": [
+            "Cloud Native",
+            "Containers",
+            "Edge Computing"
+          ]
+        }
+      ]
+    }
+  ]
+}

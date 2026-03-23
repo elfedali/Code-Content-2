@@ -1,0 +1,432 @@
+{
+  "title": "PHP Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to PHP",
+      "sections": [
+        {"title": "What is PHP?"},
+        {
+          "title": "History of PHP",
+          "subtopics": [
+            "Evolution of PHP",
+            "PHP Versions",
+            "Modern PHP (7/8)"
+          ]
+        },
+        {
+          "title": "How PHP Works",
+          "subtopics": [
+            "Client-Server Model",
+            "Request-Response Lifecycle",
+            "PHP with Web Servers"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Installing PHP",
+            "Using XAMPP / LAMP",
+            "Built-in PHP Server"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PHP Basics",
+      "sections": [
+        {
+          "title": "Syntax and Structure",
+          "subtopics": [
+            "PHP Tags",
+            "Statements",
+            "Comments"
+          ]
+        },
+        {
+          "title": "Variables",
+          "subtopics": [
+            "Declaring Variables",
+            "Variable Scope",
+            "Superglobals"
+          ]
+        },
+        {
+          "title": "Data Types",
+          "subtopics": [
+            "Strings",
+            "Integers",
+            "Floats",
+            "Booleans",
+            "Arrays",
+            "Objects",
+            "NULL"
+          ]
+        },
+        {
+          "title": "Constants",
+          "subtopics": [
+            "define()",
+            "const Keyword"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Operators and Control Flow",
+      "sections": [
+        {
+          "title": "Operators",
+          "subtopics": [
+            "Arithmetic",
+            "Assignment",
+            "Comparison",
+            "Logical"
+          ]
+        },
+        {
+          "title": "Conditional Statements",
+          "subtopics": [
+            "if / else",
+            "switch",
+            "match (PHP 8)"
+          ]
+        },
+        {
+          "title": "Loops",
+          "subtopics": [
+            "for",
+            "while",
+            "do...while",
+            "foreach"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "sections": [
+        {
+          "title": "Function Basics",
+          "subtopics": [
+            "Defining Functions",
+            "Parameters",
+            "Return Values"
+          ]
+        },
+        {
+          "title": "Advanced Functions",
+          "subtopics": [
+            "Anonymous Functions",
+            "Arrow Functions",
+            "Closures"
+          ]
+        },
+        {
+          "title": "Built-in Functions",
+          "subtopics": [
+            "String Functions",
+            "Array Functions",
+            "Date Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arrays and Data Handling",
+      "sections": [
+        {
+          "title": "Arrays",
+          "subtopics": [
+            "Indexed Arrays",
+            "Associative Arrays",
+            "Multidimensional Arrays"
+          ]
+        },
+        {
+          "title": "Array Operations",
+          "subtopics": [
+            "Sorting",
+            "Filtering",
+            "Mapping"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with Forms",
+      "sections": [
+        {
+          "title": "Handling Forms",
+          "subtopics": [
+            "GET vs POST",
+            "Form Submission",
+            "Validation"
+          ]
+        },
+        {
+          "title": "Superglobals",
+          "subtopics": [
+            "$_GET",
+            "$_POST",
+            "$_REQUEST",
+            "$_SERVER"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sessions and Cookies",
+      "sections": [
+        {
+          "title": "Cookies",
+          "subtopics": [
+            "Creating Cookies",
+            "Reading Cookies",
+            "Deleting Cookies"
+          ]
+        },
+        {
+          "title": "Sessions",
+          "subtopics": [
+            "session_start()",
+            "Storing Data",
+            "Destroying Sessions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "File Handling",
+      "sections": [
+        {
+          "title": "Working with Files",
+          "subtopics": [
+            "Reading Files",
+            "Writing Files",
+            "File Uploads"
+          ]
+        },
+        {
+          "title": "File System Functions",
+          "subtopics": [
+            "fopen",
+            "fwrite",
+            "fclose"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Error Handling",
+      "sections": [
+        {
+          "title": "Error Types",
+          "subtopics": [
+            "Notices",
+            "Warnings",
+            "Fatal Errors"
+          ]
+        },
+        {
+          "title": "Exception Handling",
+          "subtopics": [
+            "try...catch",
+            "throw",
+            "Custom Exceptions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Object-Oriented PHP",
+      "sections": [
+        {
+          "title": "Classes and Objects",
+          "subtopics": [
+            "Properties",
+            "Methods",
+            "Constructors"
+          ]
+        },
+        {
+          "title": "OOP Concepts",
+          "subtopics": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism",
+            "Abstraction"
+          ]
+        },
+        {
+          "title": "Advanced OOP",
+          "subtopics": [
+            "Traits",
+            "Interfaces",
+            "Namespaces"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with Databases",
+      "sections": [
+        {
+          "title": "MySQL with PHP",
+          "subtopics": [
+            "mysqli",
+            "PDO",
+            "Prepared Statements"
+          ]
+        },
+        {
+          "title": "CRUD Operations",
+          "subtopics": [
+            "Insert",
+            "Select",
+            "Update",
+            "Delete"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Common Vulnerabilities",
+          "subtopics": [
+            "SQL Injection",
+            "XSS",
+            "CSRF"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Input Validation",
+            "Password Hashing",
+            "Using HTTPS"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modern PHP Development",
+      "sections": [
+        {
+          "title": "Composer",
+          "subtopics": [
+            "Dependency Management",
+            "Autoloading"
+          ]
+        },
+        {
+          "title": "PSR Standards",
+          "subtopics": [
+            "PSR-1",
+            "PSR-4",
+            "Coding Standards"
+          ]
+        },
+        {
+          "title": "Frameworks",
+          "subtopics": [
+            "Laravel",
+            "Symfony"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "APIs and Web Services",
+      "sections": [
+        {
+          "title": "Building APIs",
+          "subtopics": [
+            "REST APIs",
+            "JSON Responses"
+          ]
+        },
+        {
+          "title": "Consuming APIs",
+          "subtopics": [
+            "cURL",
+            "HTTP Requests"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing and Debugging",
+      "sections": [
+        {
+          "title": "Debugging Tools",
+          "subtopics": [
+            "var_dump",
+            "Xdebug"
+          ]
+        },
+        {
+          "title": "Testing",
+          "subtopics": [
+            "Unit Testing",
+            "PHPUnit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "Optimization Techniques",
+          "subtopics": [
+            "Caching",
+            "OPcache",
+            "Code Optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "User Authentication System",
+          "subtopics": [
+            "Login/Register",
+            "Sessions"
+          ]
+        },
+        {
+          "title": "Blog System",
+          "subtopics": [
+            "Posts",
+            "Comments",
+            "Categories"
+          ]
+        },
+        {
+          "title": "REST API Backend",
+          "subtopics": [
+            "Authentication",
+            "CRUD"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of PHP",
+      "sections": [
+        {
+          "title": "Trends",
+          "subtopics": [
+            "PHP 8+ Features",
+            "Async PHP",
+            "Modern Ecosystem"
+          ]
+        }
+      ]
+    }
+  ]
+}

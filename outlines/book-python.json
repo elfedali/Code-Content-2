@@ -1,0 +1,308 @@
+{
+  "title": "Python Unlocked: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to Python",
+      "sections": [
+        {
+          "title": "Why Do People Use Python?",
+          "subtopics": [
+            "Systems Programming",
+            "GUIs",
+            "Internet Scripting",
+            "Component Integration",
+            "Database Programming",
+            "Rapid Prototyping",
+            "Numeric and Scientific Programming",
+            "Gaming, Images, Serial Ports, XML, Robots, and More"
+          ]
+        },
+        {"title": "How Is Python Supported?"},
+        {
+          "title": "What Are Python’s Technical Strengths?",
+          "subtopics": [
+            "It’s Object-Oriented",
+            "It’s Free",
+            "It’s Portable",
+            "It’s Powerful",
+            "It’s Mixable",
+            "It’s Easy to Use",
+            "It’s Easy to Learn",
+            "It’s Named After Monty Python"
+          ]
+        },
+        {"title": "How Does Python Stack Up to Language X?"},
+        {
+          "title": "How Python Runs Programs",
+          "subtopics": [
+            "Introducing the Python Interpreter",
+            "Program Execution",
+            "The Programmer’s View",
+            "Python’s View",
+            "Execution Model Variations",
+            "Python Implementation Alternatives",
+            "Execution Optimization Tools",
+            "Frozen Binaries",
+            "Other Execution Options",
+            "Future Possibilities?"
+          ]
+        },
+        {
+          "title": "How You Run Programs",
+          "subtopics": [
+            "The Interactive Prompt",
+            "Running Code Interactively",
+            "Why the Interactive Prompt?",
+            "Using the Interactive Prompt",
+            "System Command Lines and Files",
+            "A First Script",
+            "Running Files with Command Lines",
+            "Using Command Lines and Files",
+            "Unix Executable Scripts (#!)",
+            "Clicking File Icons",
+            "Clicking Icons on Windows",
+            "The input Trick",
+            "Other Icon-Click Limitations",
+            "Module Imports and Reloads",
+            "The Grander Module Story: Attributes",
+            "import and reload Usage Notes",
+            "Using exec to Run Module Files",
+            "The IDLE User Interface",
+            "IDLE Basics",
+            "Using IDLE",
+            "Advanced IDLE Tools",
+            "Other IDEs",
+            "Other Launch Options",
+            "Embedding Calls",
+            "Frozen Binary Executables",
+            "Text Editor Launch Options",
+            "Still Other Launch Options",
+            "Future Possibilities?",
+            "Which Option Should I Use?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Python Basics: Types and Operations",
+      "sections": [
+        {
+          "title": "Introducing Python Object Types",
+          "subtopics": [
+            "Why Use Built-in Types?",
+            "Python’s Core Data Types",
+            "Numbers",
+            "Strings",
+            "Sequence Operations",
+            "Immutability",
+            "Type-Specific Methods",
+            "Getting Help",
+            "Other Ways to Code Strings",
+            "Pattern Matching",
+            "Lists",
+            "Sequence Operations",
+            "Type-Specific Operations",
+            "Bounds Checking",
+            "Nesting",
+            "Comprehensions",
+            "Dictionaries",
+            "Mapping Operations",
+            "Nesting Revisited",
+            "Sorting Keys: for Loops",
+            "Iteration and Optimization",
+            "Missing Keys: if Tests",
+            "Tuples",
+            "Why Tuples?",
+            "Files",
+            "Other File-Like Tools",
+            "Other Core Types",
+            "How to Break Your Code’s Flexibility",
+            "User-Defined Classes",
+            "And Everything Else"
+          ]
+        },
+        {
+          "title": "Numeric Types",
+          "subtopics": [
+            "Numeric Type Basics",
+            "Numeric Literals",
+            "Built-in Numeric Tools",
+            "Python Expression Operators",
+            "Numbers in Action",
+            "Variables and Basic Expressions",
+            "Numeric Display Formats",
+            "Comparisons: Normal and Chained",
+            "Division: Classic, Floor, and True",
+            "Integer Precision",
+            "Complex Numbers",
+            "Hexadecimal, Octal, and Binary Notation",
+            "Bitwise Operations",
+            "Other Built-in Numeric Tools",
+            "Other Numeric Types",
+            "Decimal Type",
+            "Fraction Type",
+            "Sets",
+            "Booleans",
+            "Numeric Extensions"
+          ]
+        },
+        {
+          "title": "The Dynamic Typing Interlude",
+          "subtopics": [
+            "The Case of the Missing Declaration Statements",
+            "Variables, Objects, and References",
+            "Types Live with Objects, Not Variables",
+            "Objects Are Garbage-Collected",
+            "Shared References",
+            "Shared References and In-Place Changes",
+            "Shared References and Equality",
+            "Dynamic Typing Is Everywhere"
+          ]
+        },
+        {
+          "title": "Strings",
+          "subtopics": [
+            "String Literals",
+            "Single- and Double-Quoted Strings Are the Same",
+            "Escape Sequences Represent Special Bytes",
+            "Raw Strings Suppress Escapes",
+            "Triple Quotes Code Multiline Block Strings",
+            "Strings in Action",
+            "Basic Operations",
+            "Indexing and Slicing",
+            "String Conversion Tools",
+            "Changing Strings",
+            "String Methods",
+            "String Method Examples: Changing Strings",
+            "String Method Examples: Parsing Text",
+            "Other Common String Methods in Action",
+            "The Original string Module (Gone in 3.0)",
+            "String Formatting Expressions",
+            "Advanced String Formatting Expressions",
+            "Dictionary-Based String Formatting Expressions",
+            "String Formatting Method Calls",
+            "The Basics",
+            "Adding Keys, Attributes, and Offsets",
+            "Adding Specific Formatting",
+            "Comparison to the % Formatting Expression",
+            "Why the New Format Method?",
+            "General Type Categories",
+            "Types Share Operation Sets by Categories",
+            "Mutable Types Can Be Changed In-Place"
+          ]
+        },
+        {
+          "title": "Lists and Dictionaries",
+          "subtopics": [
+            "Lists",
+            "Lists in Action",
+            "Basic List Operations",
+            "List Iteration and Comprehensions",
+            "Indexing, Slicing, and Matrixes",
+            "Changing Lists In-Place",
+            "Dictionaries",
+            "Dictionaries in Action",
+            "Basic Dictionary Operations",
+            "Changing Dictionaries In-Place",
+            "More Dictionary Methods",
+            "A Languages Table",
+            "Dictionary Usage Notes",
+            "Other Ways to Make Dictionaries",
+            "Dictionary Changes in Python 3.0"
+          ]
+        },
+        {
+          "title": "Tuples, Files, and Everything Else",
+          "subtopics": [
+            "Tuples",
+            "Tuples in Action",
+            "Why Lists and Tuples?",
+            "Files",
+            "Opening Files",
+            "Using Files",
+            "Files in Action",
+            "Other File Tools",
+            "Type Categories Revisited",
+            "Object Flexibility",
+            "References Versus Copies",
+            "Comparisons, Equality, and Truth",
+            "Python 3.0 Dictionary Comparisons",
+            "The Meaning of True and False in Python",
+            "Python’s Type Hierarchies",
+            "Type Objects",
+            "Other Types in Python",
+            "Built-in Type Gotchas",
+            "Assignment Creates References, Not Copies",
+            "Repetition Adds One Level Deep",
+            "Beware of Cyclic Data Structures",
+            "Immutable Types Can’t Be Changed In-Place"
+          ]
+        }
+      ]
+
+    },
+    {
+      "title": "Python Syntax and Statements",
+      "sections": [
+        {"title": "Introducing Python Statements"},
+        {"title": "A Tale of Two ifs"},
+        {"title": "Assignments, Expressions, and Prints"},
+        {"title": "if Tests and Syntax Rules"},
+        {"title": "Truth Tests"},
+        {"title": "while and for Loops"},
+        {"title": "Iterations and Comprehensions (Part 1)"},
+        {"title": "Documentation Interlude"}
+      ]
+    },
+    {
+      "title": "Functions in Python",
+      "sections": [
+        {"title": "Function Basics"},
+        {"title": "Scopes"},
+        {"title": "Arguments"},
+        {"title": "Advanced Function Topics"},
+        {"title": "Iterations and Comprehensions (Part 2)"}
+      ]
+    },
+    {
+      "title": "Modules and Packages",
+      "sections": [
+        {"title": "Modules — The Big Picture"},
+        {"title": "Module Coding Basics"},
+        {"title": "Module Packages"},
+        {"title": "Advanced Module Topics"}
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "sections": [
+        {"title": "OOP — The Big Picture"},
+        {"title": "Class Coding Basics"},
+        {"title": "A More Realistic Example"},
+        {"title": "Class Coding Details"},
+        {"title": "Operator Overloading"},
+        {"title": "Designing with Classes"},
+        {"title": "Advanced Class Topics"}
+      ]
+    },
+    {
+      "title": "Exceptions and Error Handling",
+      "sections": [
+        {"title": "Exception Basics"},
+        {"title": "Exception Coding Details"},
+        {"title": "Exception Objects"},
+        {"title": "Designing with Exceptions"}
+      ]
+    },
+    {
+      "title": "Advanced Python Topics",
+      "sections": [
+        {"title": "Unicode and Byte Strings"},
+        {"title": "Using Text and Binary Files"},
+        {"title": "Managed Attributes"},
+        {"title": "Decorators"},
+        {"title": "Metaclasses"}
+      ]
+    }
+  ]
+}

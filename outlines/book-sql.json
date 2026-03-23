@@ -1,0 +1,396 @@
+{
+  "title": "SQL Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to SQL",
+      "sections": [
+        {"title": "What is SQL?"},
+        {
+          "title": "Types of Databases",
+          "subtopics": [
+            "Relational Databases",
+            "NoSQL Overview",
+            "OLTP vs OLAP"
+          ]
+        },
+        {
+          "title": "Popular Database Systems",
+          "subtopics": [
+            "MySQL",
+            "PostgreSQL",
+            "SQLite",
+            "SQL Server",
+            "Oracle"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Installing Database",
+            "Using CLI Tools",
+            "GUI Tools"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database Fundamentals",
+      "sections": [
+        {
+          "title": "Tables and Schemas",
+          "subtopics": [
+            "Rows and Columns",
+            "Primary Keys",
+            "Foreign Keys"
+          ]
+        },
+        {
+          "title": "Data Types",
+          "subtopics": [
+            "Numeric Types",
+            "String Types",
+            "Date and Time",
+            "Boolean"
+          ]
+        },
+        {
+          "title": "Constraints",
+          "subtopics": [
+            "NOT NULL",
+            "UNIQUE",
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "CHECK",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Basic SQL Queries",
+      "sections": [
+        {
+          "title": "SELECT Statement",
+          "subtopics": [
+            "Selecting Columns",
+            "Aliases",
+            "DISTINCT"
+          ]
+        },
+        {
+          "title": "Filtering Data",
+          "subtopics": [
+            "WHERE Clause",
+            "Comparison Operators",
+            "Logical Operators"
+          ]
+        },
+        {
+          "title": "Sorting Results",
+          "subtopics": [
+            "ORDER BY",
+            "ASC and DESC"
+          ]
+        },
+        {
+          "title": "Limiting Results",
+          "subtopics": [
+            "LIMIT",
+            "OFFSET"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Manipulation (DML)",
+      "sections": [
+        {
+          "title": "INSERT",
+          "subtopics": [
+            "Insert Single Row",
+            "Insert Multiple Rows"
+          ]
+        },
+        {
+          "title": "UPDATE",
+          "subtopics": [
+            "Updating Records",
+            "Conditional Updates"
+          ]
+        },
+        {
+          "title": "DELETE",
+          "subtopics": [
+            "Deleting Records",
+            "Safe Deletes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Joins and Relationships",
+      "sections": [
+        {
+          "title": "Understanding Relationships",
+          "subtopics": [
+            "One-to-One",
+            "One-to-Many",
+            "Many-to-Many"
+          ]
+        },
+        {
+          "title": "Types of Joins",
+          "subtopics": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL JOIN"
+          ]
+        },
+        {"title": "Self Joins"}
+      ]
+    },
+    {
+      "title": "Aggregation and Grouping",
+      "sections": [
+        {
+          "title": "Aggregate Functions",
+          "subtopics": [
+            "COUNT",
+            "SUM",
+            "AVG",
+            "MIN",
+            "MAX"
+          ]
+        },
+        {
+          "title": "GROUP BY",
+          "subtopics": [
+            "Grouping Data",
+            "HAVING Clause"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Subqueries and CTEs",
+      "sections": [
+        {
+          "title": "Subqueries",
+          "subtopics": [
+            "Scalar Subqueries",
+            "Correlated Subqueries"
+          ]
+        },
+        {
+          "title": "Common Table Expressions (CTE)",
+          "subtopics": [
+            "WITH Clause",
+            "Recursive CTE"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database Design",
+      "sections": [
+        {
+          "title": "Normalization",
+          "subtopics": [
+            "1NF",
+            "2NF",
+            "3NF",
+            "Denormalization"
+          ]
+        },
+        {
+          "title": "Entity Relationship (ER) Modeling",
+          "subtopics": [
+            "Entities",
+            "Attributes",
+            "Relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Indexes and Performance",
+      "sections": [
+        {
+          "title": "Indexes",
+          "subtopics": [
+            "B-Tree Index",
+            "Hash Index",
+            "Composite Index"
+          ]
+        },
+        {
+          "title": "Query Optimization",
+          "subtopics": [
+            "Execution Plans",
+            "Avoiding Full Table Scans"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transactions and Concurrency",
+      "sections": [
+        {
+          "title": "Transactions",
+          "subtopics": [
+            "BEGIN, COMMIT, ROLLBACK"
+          ]
+        },
+        {
+          "title": "ACID Properties",
+          "subtopics": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+          ]
+        },
+        {
+          "title": "Concurrency Control",
+          "subtopics": [
+            "Locks",
+            "Deadlocks",
+            "Isolation Levels"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced SQL",
+      "sections": [
+        {
+          "title": "Window Functions",
+          "subtopics": [
+            "ROW_NUMBER",
+            "RANK",
+            "PARTITION BY"
+          ]
+        },
+        {
+          "title": "Views",
+          "subtopics": [
+            "Creating Views",
+            "Materialized Views"
+          ]
+        },
+        {
+          "title": "Stored Procedures",
+          "subtopics": [
+            "Creating Procedures",
+            "Parameters"
+          ]
+        },
+        {
+          "title": "Triggers",
+          "subtopics": [
+            "BEFORE and AFTER Triggers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "User Management",
+          "subtopics": [
+            "Roles",
+            "Permissions"
+          ]
+        },
+        {
+          "title": "SQL Injection",
+          "subtopics": [
+            "Prevention Techniques"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Backup and Recovery",
+      "sections": [
+        {
+          "title": "Backup Strategies",
+          "subtopics": [
+            "Full Backup",
+            "Incremental Backup"
+          ]
+        },
+        {
+          "title": "Recovery Techniques",
+          "subtopics": [
+            "Point-in-time Recovery"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SQL in Applications",
+      "sections": [
+        {
+          "title": "Using SQL with Backend",
+          "subtopics": [
+            "PHP",
+            "Node.js",
+            "Java"
+          ]
+        },
+        {
+          "title": "ORMs",
+          "subtopics": [
+            "Sequelize",
+            "Doctrine",
+            "Hibernate"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "E-commerce Database",
+          "subtopics": [
+            "Users",
+            "Products",
+            "Orders"
+          ]
+        },
+        {
+          "title": "Blog System",
+          "subtopics": [
+            "Posts",
+            "Comments",
+            "Categories"
+          ]
+        },
+        {
+          "title": "SaaS Dashboard",
+          "subtopics": [
+            "Multi-tenant Design",
+            "Permissions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of Databases",
+      "sections": [
+        {
+          "title": "Trends",
+          "subtopics": [
+            "Cloud Databases",
+            "Distributed Systems",
+            "NewSQL"
+          ]
+        }
+      ]
+    }
+  ]
+}
