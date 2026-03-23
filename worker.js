@@ -5,15 +5,51 @@
  * for every pending section using Ollama running on this machine.
  *
  * Usage:
- *   node worker.js --all          → generate everything (all outlines)
- *   node worker.js book-js        → generate only the book-js outline
+ *   node worker.js --all             → generate everything (foreground)
+ *   node worker.js --all --detach    → generate everything (background, detached)
+ *   node worker.js book-js           → generate one book (foreground)
+ *   node worker.js book-js --detach  → generate one book (background, detached)
  *
- * Progress is saved after every section, so you can Ctrl+C at any time
- * and resume by running the same command again.
+ * When running detached:
+ *   - The terminal can be closed immediately.
+ *   - All output is written to logs/worker.log
+ *   - Check progress at http://localhost:4040
+ *
+ * Progress is saved after every section — run again any time to resume.
  */
 
 require("dotenv").config();
+const fs   = require("fs");
+const path = require("path");
+const { spawn } = require("child_process");
 const { generateBook, generateAll, loadOutline } = require("./src/controllers/generationController");
+
+const logsDir  = path.join(__dirname, "logs");
+const logFile  = path.join(logsDir, "worker.log");
+
+// ── Detach helper ─────────────────────────────────────────────────────────────
+// Re-spawns this same script without --detach, fully detached from the terminal.
+function spawnDetached() {
+  fs.mkdirSync(logsDir, { recursive: true });
+  const log = fs.openSync(logFile, "a");
+
+  // Pass all original args except --detach
+  const args = process.argv.slice(2).filter((a) => a !== "--detach" && a !== "-d");
+
+  const child = spawn(process.execPath, [__filename, ...args], {
+    detached: true,
+    stdio:    ["ignore", log, log],
+    env:      process.env,
+  });
+
+  child.unref();
+
+  console.log(`\n🚀 Worker started in background  (PID: ${child.pid})`);
+  console.log(`📄 Log file : ${logFile}`);
+  console.log(`🌐 Dashboard: http://localhost:${process.env.PORT || 4040}`);
+  console.log(`\n   You can safely close this terminal.\n`);
+  process.exit(0);
+}
 
 // ── Progress callback ────────────────────────────────────────────────────────
 function onProgress({ bookId, sectionIndex, total, status, chapter, section, error }) {
@@ -33,8 +69,14 @@ process.on("SIGINT", () => {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
-  const arg        = process.argv[2];
+  const args       = process.argv.slice(2);
+  const detach     = args.includes("--detach") || args.includes("-d");
+  const cleanArgs  = args.filter((a) => a !== "--detach" && a !== "-d");
+  const arg        = cleanArgs[0];
   const targetBook = arg && arg !== "--all" ? arg : null;
+
+  // Re-launch detached before doing any real work
+  if (detach) spawnDetached();
 
   if (targetBook) {
     // Single book mode
