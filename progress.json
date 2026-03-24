@@ -107,7 +107,49 @@
     "completed": [
       "Introduction to HTML5 > What is HTML?",
       "Introduction to HTML5 > History of HTML and HTML5",
-      "Introduction to HTML5 > How the Web Works"
+      "Introduction to HTML5 > How the Web Works",
+      "Introduction to HTML5 > Basic Structure of an HTML Document",
+      "HTML Syntax and Elements > Tags and Elements",
+      "HTML Syntax and Elements > Attributes",
+      "HTML Syntax and Elements > Comments in HTML",
+      "Text Content and Formatting > Headings and Paragraphs",
+      "Text Content and Formatting > Text Formatting Tags",
+      "Text Content and Formatting > Lists",
+      "Links and Navigation > Anchor Tag",
+      "Links and Navigation > Navigation Menus",
+      "Images and Media > Images",
+      "Images and Media > Audio and Video",
+      "Images and Media > Embedding Content",
+      "Forms and Input > Form Basics",
+      "Forms and Input > Input Types",
+      "Forms and Input > Form Elements",
+      "Forms and Input > Validation",
+      "Semantic HTML > Why Semantic HTML Matters",
+      "Semantic HTML > Semantic Elements",
+      "Tables > Table Structure",
+      "Tables > Advanced Tables",
+      "Multimedia and Graphics > Canvas API",
+      "Multimedia and Graphics > SVG",
+      "APIs and Advanced Features > Web Storage",
+      "APIs and Advanced Features > Geolocation API",
+      "APIs and Advanced Features > Drag and Drop API",
+      "APIs and Advanced Features > Web Workers",
+      "Accessibility (A11Y) > Accessibility Basics",
+      "Accessibility (A11Y) > Best Practices",
+      "SEO and Metadata > Meta Tags",
+      "SEO and Metadata > Open Graph",
+      "Performance and Optimization > Best Practices",
+      "Integration with CSS and JavaScript > Linking CSS",
+      "Integration with CSS and JavaScript > Using JavaScript",
+      "Real Projects > Portfolio Website",
+      "Real Projects > Landing Page",
+      "Real Projects > Blog Layout",
+      "Future of HTML > New Features"
+    ]
+  },
+  "book-js": {
+    "completed": [
+      "Introduction to JavaScript > What is JavaScript?"
     ]
   }
 }
