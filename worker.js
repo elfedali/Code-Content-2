@@ -87,6 +87,13 @@ function gitCommitPush(bookId, title, result) {
   }
   console.log(`   ✅ Committed: ${msg}`);
 
+  // Pull (rebase) first to avoid non-fast-forward rejection
+  const pull = run("git", ["pull", "--rebase"]);
+  if (pull.status !== 0) {
+    console.error(`   ❌ git pull --rebase failed:\n${pull.stderr}`);
+    return;
+  }
+
   const push = run("git", ["push"]);
   if (push.status !== 0) {
     console.error(`   ❌ git push failed:\n${push.stderr}`);
