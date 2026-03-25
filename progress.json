@@ -280,7 +280,25 @@
       "Deployment and DevOps > Environment Configuration",
       "Deployment and DevOps > Deployment",
       "Tooling and Ecosystem > Package Management",
-      "Tooling and Ecosystem > Development Tools"
+      "Tooling and Ecosystem > Development Tools",
+      "Architecture and Best Practices > Project Structure",
+      "Architecture and Best Practices > Code Quality",
+      "Real Projects > REST API for SaaS",
+      "Real Projects > Chat Application",
+      "Real Projects > File Upload Service",
+      "Future of Node.js > Emerging Trends"
+    ]
+  },
+  "book-php": {
+    "completed": [
+      "Introduction to PHP > What is PHP?",
+      "Introduction to PHP > History of PHP",
+      "Introduction to PHP > How PHP Works",
+      "Introduction to PHP > Setting Up Environment",
+      "PHP Basics > Syntax and Structure",
+      "PHP Basics > Variables",
+      "PHP Basics > Data Types",
+      "PHP Basics > Constants"
     ]
   }
 }
