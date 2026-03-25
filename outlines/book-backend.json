@@ -1,0 +1,296 @@
+{
+  "title": "Backend Engineering Mastery: Building Scalable and Reliable Systems",
+  "chapters": [
+    {
+      "title": "Foundations of Backend Development",
+      "sections": [
+        {"title": "What is a Backend?"},
+        {
+          "title": "Client-Server Architecture",
+          "subtopics": [
+            "Request/Response",
+            "REST vs GraphQL"
+          ]
+        },
+        {
+          "title": "Choosing a Stack",
+          "subtopics": [
+            "Node.js",
+            "PHP",
+            "Java",
+            "Go"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "API Design",
+      "sections": [
+        {
+          "title": "REST API Principles",
+          "subtopics": [
+            "Endpoints",
+            "HTTP Methods",
+            "Status Codes"
+          ]
+        },
+        {
+          "title": "API Design Best Practices",
+          "subtopics": [
+            "Versioning",
+            "Pagination",
+            "Filtering"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Authentication and Authorization",
+      "sections": [
+        {
+          "title": "Authentication",
+          "subtopics": [
+            "JWT",
+            "Sessions",
+            "OAuth"
+          ]
+        },
+        {
+          "title": "Authorization",
+          "subtopics": [
+            "Roles and Permissions",
+            "RBAC"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Databases",
+      "sections": [
+        {
+          "title": "SQL Databases",
+          "subtopics": [
+            "MySQL",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "title": "NoSQL",
+          "subtopics": [
+            "MongoDB",
+            "Redis"
+          ]
+        },
+        {
+          "title": "Database Design",
+          "subtopics": [
+            "Normalization",
+            "Indexes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Caching and Performance",
+      "sections": [
+        {
+          "title": "Caching Strategies",
+          "subtopics": [
+            "Redis",
+            "In-memory Cache"
+          ]
+        },
+        {
+          "title": "Performance Optimization",
+          "subtopics": [
+            "Query Optimization",
+            "Lazy Loading"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scalability",
+      "sections": [
+        {
+          "title": "Horizontal Scaling",
+          "subtopics": [
+            "Load Balancers",
+            "Stateless APIs"
+          ]
+        },
+        {
+          "title": "Microservices",
+          "subtopics": [
+            "Service Communication",
+            "Event-driven Systems"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Messaging and Queues",
+      "sections": [
+        {
+          "title": "Asynchronous Processing",
+          "subtopics": [
+            "Queues",
+            "Background Jobs"
+          ]
+        },
+        {
+          "title": "Tools",
+          "subtopics": [
+            "RabbitMQ",
+            "Kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Common Vulnerabilities",
+          "subtopics": [
+            "SQL Injection",
+            "XSS",
+            "CSRF"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Validation",
+            "Rate Limiting",
+            "Encryption"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "sections": [
+        {
+          "title": "Types of Testing",
+          "subtopics": [
+            "Unit Testing",
+            "Integration Testing"
+          ]
+        },
+        {
+          "title": "Tools",
+          "subtopics": [
+            "Jest",
+            "PHPUnit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DevOps and Deployment",
+      "sections": [
+        {
+          "title": "CI/CD",
+          "subtopics": [
+            "GitHub Actions",
+            "Pipelines"
+          ]
+        },
+        {
+          "title": "Deployment",
+          "subtopics": [
+            "Docker",
+            "VPS",
+            "Kubernetes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monitoring and Logging",
+      "sections": [
+        {
+          "title": "Logging",
+          "subtopics": [
+            "Structured Logs",
+            "Centralized Logging"
+          ]
+        },
+        {
+          "title": "Monitoring",
+          "subtopics": [
+            "Metrics",
+            "Alerts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System Design",
+      "sections": [
+        {
+          "title": "Design Principles",
+          "subtopics": [
+            "Scalability",
+            "Reliability",
+            "Maintainability"
+          ]
+        },
+        {
+          "title": "Design Patterns",
+          "subtopics": [
+            "MVC",
+            "CQRS",
+            "Event Sourcing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Authentication System",
+          "subtopics": [
+            "JWT Auth",
+            "Role Management"
+          ]
+        },
+        {
+          "title": "SaaS Backend",
+          "subtopics": [
+            "Multi-tenancy",
+            "Billing"
+          ]
+        },
+        {
+          "title": "Scalable API",
+          "subtopics": [
+            "Caching",
+            "Queue Processing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Becoming a Senior Backend Engineer",
+      "sections": [
+        {
+          "title": "Mindset",
+          "subtopics": [
+            "Thinking in Systems",
+            "Trade-offs"
+          ]
+        },
+        {
+          "title": "Career Growth",
+          "subtopics": [
+            "Code Quality",
+            "Architecture Ownership"
+          ]
+        }
+      ]
+    }
+  ]
+}

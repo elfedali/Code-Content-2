@@ -1,0 +1,373 @@
+{
+  "title": "MySQL Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to MySQL",
+      "sections": [
+        {"title": "What is MySQL?"},
+        {
+          "title": "Relational Databases Overview",
+          "subtopics": [
+            "Tables, Rows, Columns",
+            "Primary Keys",
+            "Foreign Keys"
+          ]
+        },
+        {
+          "title": "MySQL Architecture",
+          "subtopics": [
+            "Client-Server Model",
+            "Storage Engines",
+            "Query Processing"
+          ]
+        },
+        {
+          "title": "Installing MySQL",
+          "subtopics": [
+            "Local Installation",
+            "Using Docker",
+            "Cloud Setup"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "sections": [
+        {
+          "title": "MySQL CLI",
+          "subtopics": [
+            "Connecting to Server",
+            "Basic Commands"
+          ]
+        },
+        {
+          "title": "GUI Tools",
+          "subtopics": [
+            "MySQL Workbench",
+            "phpMyAdmin"
+          ]
+        },
+        {
+          "title": "Creating Databases",
+          "subtopics": [
+            "CREATE DATABASE",
+            "DROP DATABASE"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database Design",
+      "sections": [
+        {
+          "title": "Tables and Schemas",
+          "subtopics": [
+            "CREATE TABLE",
+            "Data Types",
+            "Constraints"
+          ]
+        },
+        {
+          "title": "Normalization",
+          "subtopics": [
+            "1NF, 2NF, 3NF",
+            "Avoiding Redundancy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Basic Queries",
+      "sections": [
+        {
+          "title": "SELECT Statement",
+          "subtopics": [
+            "Selecting Columns",
+            "Aliases",
+            "DISTINCT"
+          ]
+        },
+        {
+          "title": "Filtering Data",
+          "subtopics": [
+            "WHERE Clause",
+            "Operators",
+            "LIKE",
+            "IN",
+            "BETWEEN"
+          ]
+        },
+        {
+          "title": "Sorting and Limiting",
+          "subtopics": [
+            "ORDER BY",
+            "LIMIT",
+            "OFFSET"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Manipulation",
+      "sections": [
+        {
+          "title": "INSERT",
+          "subtopics": [
+            "Single Row",
+            "Multiple Rows"
+          ]
+        },
+        {
+          "title": "UPDATE",
+          "subtopics": [
+            "Updating Records",
+            "Conditions"
+          ]
+        },
+        {
+          "title": "DELETE",
+          "subtopics": [
+            "Deleting Records",
+            "Safe Deletes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Joins and Relationships",
+      "sections": [
+        {
+          "title": "Types of Joins",
+          "subtopics": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN"
+          ]
+        },
+        {
+          "title": "Working with Relationships",
+          "subtopics": [
+            "One-to-Many",
+            "Many-to-Many"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aggregation and Grouping",
+      "sections": [
+        {
+          "title": "Aggregate Functions",
+          "subtopics": [
+            "COUNT",
+            "SUM",
+            "AVG",
+            "MIN",
+            "MAX"
+          ]
+        },
+        {
+          "title": "GROUP BY",
+          "subtopics": [
+            "Grouping Data",
+            "HAVING Clause"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Indexes and Optimization",
+      "sections": [
+        {
+          "title": "Indexes",
+          "subtopics": [
+            "Creating Indexes",
+            "Types of Indexes"
+          ]
+        },
+        {
+          "title": "Query Optimization",
+          "subtopics": [
+            "EXPLAIN",
+            "Avoiding Slow Queries"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transactions",
+      "sections": [
+        {
+          "title": "Transaction Basics",
+          "subtopics": [
+            "START TRANSACTION",
+            "COMMIT",
+            "ROLLBACK"
+          ]
+        },
+        {
+          "title": "ACID Properties",
+          "subtopics": [
+            "Atomicity",
+            "Consistency",
+            "Isolation",
+            "Durability"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stored Programs",
+      "sections": [
+        {
+          "title": "Stored Procedures",
+          "subtopics": [
+            "Creating Procedures",
+            "Parameters"
+          ]
+        },
+        {
+          "title": "Functions",
+          "subtopics": [
+            "User-defined Functions"
+          ]
+        },
+        {
+          "title": "Triggers",
+          "subtopics": [
+            "BEFORE and AFTER Triggers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Views",
+      "sections": [
+        {
+          "title": "Creating Views",
+          "subtopics": [
+            "Virtual Tables",
+            "Updating Views"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "User Management",
+          "subtopics": [
+            "CREATE USER",
+            "GRANT",
+            "REVOKE"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Password Security",
+            "Access Control"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Backup and Recovery",
+      "sections": [
+        {
+          "title": "Backup",
+          "subtopics": [
+            "mysqldump",
+            "Automated Backups"
+          ]
+        },
+        {
+          "title": "Restore",
+          "subtopics": [
+            "Restoring Databases"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MySQL in Applications",
+      "sections": [
+        {
+          "title": "Connecting from Backend",
+          "subtopics": [
+            "PHP (PDO, mysqli)",
+            "Node.js (mysql2)"
+          ]
+        },
+        {
+          "title": "ORMs",
+          "subtopics": [
+            "Sequelize",
+            "Doctrine"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Scaling",
+      "sections": [
+        {
+          "title": "Performance Tuning",
+          "subtopics": [
+            "Query Optimization",
+            "Caching"
+          ]
+        },
+        {
+          "title": "Scaling MySQL",
+          "subtopics": [
+            "Replication",
+            "Sharding"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "E-commerce Database",
+          "subtopics": [
+            "Users",
+            "Products",
+            "Orders"
+          ]
+        },
+        {
+          "title": "Blog System",
+          "subtopics": [
+            "Posts",
+            "Comments"
+          ]
+        },
+        {
+          "title": "SaaS Application",
+          "subtopics": [
+            "Multi-tenant Design",
+            "Permissions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of MySQL",
+      "sections": [
+        {
+          "title": "Trends",
+          "subtopics": [
+            "Cloud Databases",
+            "Managed Services",
+            "New Features"
+          ]
+        }
+      ]
+    }
+  ]
+}

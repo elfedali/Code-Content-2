@@ -1,0 +1,323 @@
+{
+  "title": "Traefik Mastery: Modern Reverse Proxy & Edge Router",
+  "chapters": [
+    {
+      "title": "Introduction to Traefik",
+      "sections": [
+        {"title": "What is Traefik?"},
+        {
+          "title": "Why Use Traefik?",
+          "subtopics": [
+            "Dynamic Configuration",
+            "Automatic Service Discovery",
+            "Built-in HTTPS",
+            "Cloud Native"
+          ]
+        },
+        {
+          "title": "Traefik vs Traditional Proxies",
+          "subtopics": [
+            "Nginx vs Traefik",
+            "Apache vs Traefik"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "sections": [
+        {
+          "title": "Architecture Overview",
+          "subtopics": [
+            "EntryPoints",
+            "Routers",
+            "Middlewares",
+            "Services"
+          ]
+        },
+        {
+          "title": "Static vs Dynamic Configuration",
+          "subtopics": [
+            "traefik.yml",
+            "Providers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "sections": [
+        {
+          "title": "Installation",
+          "subtopics": [
+            "Binary Installation",
+            "Docker Setup"
+          ]
+        },
+        {
+          "title": "First Traefik App",
+          "subtopics": [
+            "Running a Simple Service",
+            "Accessing via Browser"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Configuration",
+      "sections": [
+        {
+          "title": "Static Configuration",
+          "subtopics": [
+            "EntryPoints Setup",
+            "Enabling Dashboard"
+          ]
+        },
+        {
+          "title": "Dynamic Configuration",
+          "subtopics": [
+            "File Provider",
+            "Docker Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Routing",
+      "sections": [
+        {
+          "title": "HTTP Routing",
+          "subtopics": [
+            "Host Rules",
+            "Path Rules"
+          ]
+        },
+        {
+          "title": "HTTPS Routing",
+          "subtopics": [
+            "TLS Configuration",
+            "Certificates"
+          ]
+        },
+        {
+          "title": "TCP and UDP Routing",
+          "subtopics": [
+            "Non-HTTP Services"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Middlewares",
+      "sections": [
+        {
+          "title": "Introduction to Middlewares",
+          "subtopics": [
+            "Request Modification",
+            "Response Modification"
+          ]
+        },
+        {
+          "title": "Common Middlewares",
+          "subtopics": [
+            "Redirect",
+            "StripPrefix",
+            "BasicAuth",
+            "Rate Limiting",
+            "Headers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Services and Load Balancing",
+      "sections": [
+        {
+          "title": "Defining Services",
+          "subtopics": [
+            "Single Service",
+            "Multiple Instances"
+          ]
+        },
+        {
+          "title": "Load Balancing",
+          "subtopics": [
+            "Round Robin",
+            "Health Checks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Docker Integration",
+      "sections": [
+        {
+          "title": "Using Traefik with Docker",
+          "subtopics": [
+            "Docker Labels",
+            "Automatic Discovery"
+          ]
+        },
+        {
+          "title": "Docker Compose Setup",
+          "subtopics": [
+            "traefik + app",
+            "Network Configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "HTTPS and Certificates",
+      "sections": [
+        {
+          "title": "Let's Encrypt Integration",
+          "subtopics": [
+            "Automatic Certificates",
+            "ACME Challenge"
+          ]
+        },
+        {
+          "title": "TLS Options",
+          "subtopics": [
+            "Custom Certificates",
+            "Security Settings"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Authentication and Security",
+      "sections": [
+        {
+          "title": "Authentication",
+          "subtopics": [
+            "Basic Auth",
+            "Forward Auth"
+          ]
+        },
+        {
+          "title": "Security Best Practices",
+          "subtopics": [
+            "Headers",
+            "Rate Limiting",
+            "IP Whitelisting"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Observability",
+      "sections": [
+        {
+          "title": "Logging",
+          "subtopics": [
+            "Access Logs",
+            "Error Logs"
+          ]
+        },
+        {
+          "title": "Metrics",
+          "subtopics": [
+            "Prometheus Integration",
+            "Grafana Dashboards"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Configuration",
+      "sections": [
+        {
+          "title": "Custom Plugins",
+          "subtopics": [
+            "Middleware Plugins"
+          ]
+        },
+        {
+          "title": "Multiple Providers",
+          "subtopics": [
+            "Docker + File",
+            "Kubernetes Integration"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deployment Strategies",
+      "sections": [
+        {
+          "title": "Production Setup",
+          "subtopics": [
+            "High Availability",
+            "Multiple Nodes"
+          ]
+        },
+        {
+          "title": "CI/CD Integration",
+          "subtopics": [
+            "Auto Deployment",
+            "Versioning"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "sections": [
+        {
+          "title": "Debugging",
+          "subtopics": [
+            "Logs Analysis",
+            "Dashboard Usage"
+          ]
+        },
+        {
+          "title": "Common Issues",
+          "subtopics": [
+            "Routing Problems",
+            "SSL Errors"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Multi-domain Hosting",
+          "subtopics": [
+            "Multiple Apps",
+            "Subdomains"
+          ]
+        },
+        {
+          "title": "Microservices Gateway",
+          "subtopics": [
+            "API Routing",
+            "Load Balancing"
+          ]
+        },
+        {
+          "title": "Full Docker Stack",
+          "subtopics": [
+            "Traefik + App + Database",
+            "Secure Deployment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of Traefik",
+      "sections": [
+        {
+          "title": "Cloud Native Trends",
+          "subtopics": [
+            "Kubernetes Growth",
+            "Service Mesh"
+          ]
+        }
+      ]
+    }
+  ]
+}

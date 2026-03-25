@@ -1,0 +1,244 @@
+{
+  "title": "MongoDB Mastery: NoSQL Database for Modern Applications",
+  "chapters": [
+    {
+      "title": "Introduction to MongoDB",
+      "sections": [
+        {"title": "What is MongoDB?"},
+        {
+          "title": "SQL vs NoSQL",
+          "subtopics": [
+            "Relational vs Document",
+            "Use Cases"
+          ]
+        },
+        {
+          "title": "MongoDB Architecture",
+          "subtopics": [
+            "Collections",
+            "Documents",
+            "BSON"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "sections": [
+        {
+          "title": "Installation",
+          "subtopics": [
+            "Local Setup",
+            "MongoDB Atlas"
+          ]
+        },
+        {
+          "title": "Mongo Shell",
+          "subtopics": [
+            "Basic Commands",
+            "CRUD Overview"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CRUD Operations",
+      "sections": [
+        {
+          "title": "Create",
+          "subtopics": [
+            "insertOne",
+            "insertMany"
+          ]
+        },
+        {
+          "title": "Read",
+          "subtopics": [
+            "find",
+            "Projection",
+            "Query Operators"
+          ]
+        },
+        {
+          "title": "Update",
+          "subtopics": [
+            "updateOne",
+            "updateMany",
+            "$set, $inc"
+          ]
+        },
+        {
+          "title": "Delete",
+          "subtopics": [
+            "deleteOne",
+            "deleteMany"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Modeling",
+      "sections": [
+        {
+          "title": "Schema Design",
+          "subtopics": [
+            "Embedding vs Referencing",
+            "Denormalization"
+          ]
+        },
+        {
+          "title": "Relationships",
+          "subtopics": [
+            "One-to-One",
+            "One-to-Many"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Indexes",
+      "sections": [
+        {
+          "title": "Index Basics",
+          "subtopics": [
+            "Single Field",
+            "Compound Index"
+          ]
+        },
+        {
+          "title": "Performance",
+          "subtopics": [
+            "Query Optimization",
+            "Explain"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aggregation Framework",
+      "sections": [
+        {
+          "title": "Pipelines",
+          "subtopics": [
+            "$match",
+            "$group",
+            "$project"
+          ]
+        },
+        {
+          "title": "Advanced Aggregation",
+          "subtopics": [
+            "Joins ($lookup)",
+            "Sorting and Filtering"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transactions",
+      "sections": [
+        {
+          "title": "Multi-document Transactions",
+          "subtopics": [
+            "ACID in MongoDB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Authentication",
+          "subtopics": [
+            "Users and Roles"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Access Control",
+            "Encryption"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scaling",
+      "sections": [
+        {
+          "title": "Replication",
+          "subtopics": [
+            "Replica Sets",
+            "High Availability"
+          ]
+        },
+        {
+          "title": "Sharding",
+          "subtopics": [
+            "Horizontal Scaling",
+            "Shard Keys"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MongoDB with Node.js",
+      "sections": [
+        {
+          "title": "Using MongoDB Driver",
+          "subtopics": [
+            "Connecting",
+            "CRUD in Node"
+          ]
+        },
+        {
+          "title": "Mongoose",
+          "subtopics": [
+            "Schemas",
+            "Models",
+            "Validation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Indexes",
+            "Efficient Queries"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Blog Backend",
+          "subtopics": [
+            "Posts",
+            "Comments"
+          ]
+        },
+        {
+          "title": "E-commerce",
+          "subtopics": [
+            "Products",
+            "Orders"
+          ]
+        },
+        {
+          "title": "Chat App",
+          "subtopics": [
+            "Messages",
+            "Real-time Updates"
+          ]
+        }
+      ]
+    }
+  ]
+}

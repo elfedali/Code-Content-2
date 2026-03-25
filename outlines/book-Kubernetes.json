@@ -1,0 +1,256 @@
+{
+  "title": "Kubernetes Mastery: From Containers to Cloud-Native Systems",
+  "chapters": [
+    {
+      "title": "Introduction to Kubernetes",
+      "sections": [
+        {"title": "What is Kubernetes?"},
+        {
+          "title": "Why Kubernetes?",
+          "subtopics": [
+            "Container Orchestration",
+            "Scalability",
+            "High Availability"
+          ]
+        },
+        {
+          "title": "Kubernetes Architecture",
+          "subtopics": [
+            "Master Node",
+            "Worker Nodes",
+            "API Server",
+            "Scheduler",
+            "Controller Manager",
+            "Kubelet"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "sections": [
+        {
+          "title": "Pods",
+          "subtopics": [
+            "Pod Lifecycle",
+            "Multi-container Pods"
+          ]
+        },
+        {
+          "title": "Deployments",
+          "subtopics": [
+            "ReplicaSets",
+            "Rolling Updates"
+          ]
+        },
+        {
+          "title": "Services",
+          "subtopics": [
+            "ClusterIP",
+            "NodePort",
+            "LoadBalancer"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Configuration Management",
+      "sections": [
+        {
+          "title": "ConfigMaps",
+          "subtopics": [
+            "Environment Variables",
+            "Configuration Injection"
+          ]
+        },
+        {
+          "title": "Secrets",
+          "subtopics": [
+            "Sensitive Data",
+            "Base64 Encoding"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Storage",
+      "sections": [
+        {
+          "title": "Volumes",
+          "subtopics": [
+            "EmptyDir",
+            "HostPath"
+          ]
+        },
+        {
+          "title": "Persistent Storage",
+          "subtopics": [
+            "Persistent Volumes (PV)",
+            "Persistent Volume Claims (PVC)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Networking",
+      "sections": [
+        {
+          "title": "Cluster Networking",
+          "subtopics": [
+            "Pod-to-Pod Communication",
+            "CNI Plugins"
+          ]
+        },
+        {
+          "title": "Ingress",
+          "subtopics": [
+            "Routing Traffic",
+            "Ingress Controllers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scaling and Reliability",
+      "sections": [
+        {
+          "title": "Auto Scaling",
+          "subtopics": [
+            "Horizontal Pod Autoscaler",
+            "Vertical Scaling"
+          ]
+        },
+        {
+          "title": "Self-healing",
+          "subtopics": [
+            "Restart Policies",
+            "Health Checks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Helm and Package Management",
+      "sections": [
+        {
+          "title": "Helm Basics",
+          "subtopics": [
+            "Charts",
+            "Releases"
+          ]
+        },
+        {
+          "title": "Managing Applications",
+          "subtopics": [
+            "Install",
+            "Upgrade",
+            "Rollback"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Observability",
+      "sections": [
+        {
+          "title": "Logging",
+          "subtopics": [
+            "Centralized Logs",
+            "ELK Stack"
+          ]
+        },
+        {
+          "title": "Monitoring",
+          "subtopics": [
+            "Prometheus",
+            "Grafana"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Authentication & Authorization",
+          "subtopics": [
+            "RBAC",
+            "Service Accounts"
+          ]
+        },
+        {
+          "title": "Pod Security",
+          "subtopics": [
+            "Security Context",
+            "Network Policies"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Service Mesh",
+      "sections": [
+        {
+          "title": "What is a Service Mesh?",
+          "subtopics": [
+            "Microservices Communication",
+            "Sidecar Pattern"
+          ]
+        },
+        {
+          "title": "Key Features",
+          "subtopics": [
+            "Traffic Management",
+            "Observability",
+            "Security (mTLS)"
+          ]
+        },
+        {
+          "title": "Popular Service Mesh Tools",
+          "subtopics": [
+            "Istio",
+            "Linkerd"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CI/CD and GitOps",
+      "sections": [
+        {
+          "title": "CI/CD Pipelines",
+          "subtopics": [
+            "Build and Deploy",
+            "Automation"
+          ]
+        },
+        {
+          "title": "GitOps",
+          "subtopics": [
+            "ArgoCD",
+            "Flux"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Deploying a Microservices App",
+          "subtopics": [
+            "Frontend + Backend + DB",
+            "Scaling Services"
+          ]
+        },
+        {
+          "title": "Production Cluster",
+          "subtopics": [
+            "High Availability",
+            "Load Balancing"
+          ]
+        }
+      ]
+    }
+  ]
+}

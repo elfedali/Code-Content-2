@@ -1,0 +1,246 @@
+/* ── PDF / HTML Export Stylesheet ─────────────────────────────────────── */
+/* Used when pandoc falls back to self-contained HTML export              */
+
+:root {
+  --fg:       #1a1a2e;
+  --muted:    #555;
+  --accent:   #4a6cf7;
+  --code-bg:  #f4f4f8;
+  --border:   #d0d4e8;
+  --radius:   6px;
+  font-size:  16px;
+}
+
+/* ── Page setup (print) ──────────────────────────────────────────────── */
+@page {
+  size: A4;
+  margin: 2.5cm 2.8cm 2.5cm 2.8cm;
+}
+
+@page :first {
+  margin-top: 4cm;
+}
+
+/* ── Base ────────────────────────────────────────────────────────────── */
+html, body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: var(--fg);
+  line-height: 1.75;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  background: #fff;
+}
+
+/* ── Title page block ────────────────────────────────────────────────── */
+header#title-block-header {
+  text-align: center;
+  padding: 60px 0 40px;
+  margin-bottom: 60px;
+  border-bottom: 3px solid var(--accent);
+  page-break-after: always;
+}
+
+header#title-block-header .title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+header#title-block-header .author,
+header#title-block-header .date {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 4px 0;
+}
+
+/* ── Table of contents ───────────────────────────────────────────────── */
+nav#TOC {
+  background: #f8f9ff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 32px;
+  margin: 0 0 48px;
+  page-break-after: always;
+}
+
+nav#TOC::before {
+  content: "Table of Contents";
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+nav#TOC ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav#TOC li { margin: 5px 0; }
+
+nav#TOC a {
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav#TOC a:hover { color: var(--accent); }
+
+nav#TOC ul ul {
+  padding-left: 20px;
+  margin-top: 4px;
+}
+
+nav#TOC ul ul a {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ── Headings ────────────────────────────────────────────────────────── */
+h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--accent);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+  margin: 60px 0 22px;
+  page-break-before: always;
+}
+
+h1:first-of-type { page-break-before: avoid; }
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--fg);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin: 40px 0 16px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2d3474;
+  margin: 28px 0 10px;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 20px 0 8px;
+}
+
+/* ── Paragraphs & text ───────────────────────────────────────────────── */
+p { margin: 0 0 16px; }
+
+strong { color: #111; }
+
+em { color: #3a3a6a; }
+
+a { color: var(--accent); }
+
+/* ── Lists ───────────────────────────────────────────────────────────── */
+ul, ol {
+  margin: 0 0 16px 24px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  line-height: 1.65;
+}
+
+/* ── Code ────────────────────────────────────────────────────────────── */
+code {
+  font-family: 'Fira Code', 'Cascadia Code', 'Menlo', 'Consolas', monospace;
+  font-size: 0.875em;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: #c0392b;
+}
+
+pre {
+  background: #1e1e2e;
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  overflow-x: auto;
+  margin: 20px 0;
+  page-break-inside: avoid;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #cdd6f4;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+/* ── Blockquotes ─────────────────────────────────────────────────────── */
+blockquote {
+  border-left: 4px solid var(--accent);
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: #f0f3ff;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--muted);
+  font-style: italic;
+  page-break-inside: avoid;
+}
+
+blockquote p { margin: 0; }
+
+/* ── Tables ──────────────────────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  text-align: left;
+}
+
+th {
+  background: #f0f3ff;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+tr:nth-child(even) td { background: #fafbff; }
+
+/* ── Horizontal rule ─────────────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 36px 0;
+}
+
+/* ── Print overrides ─────────────────────────────────────────────────── */
+@media print {
+  body { padding: 0; }
+
+  a { color: var(--fg); }
+
+  pre, blockquote, table { page-break-inside: avoid; }
+
+  h1, h2, h3 { page-break-after: avoid; }
+}

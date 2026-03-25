@@ -1,0 +1,379 @@
+{
+  "title": "TypeScript Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to TypeScript",
+      "sections": [
+        {"title": "What is TypeScript?"},
+        {
+          "title": "Why Use TypeScript?",
+          "subtopics": [
+            "Static Typing",
+            "Better Tooling",
+            "Scalability",
+            "Maintainability"
+          ]
+        },
+        {
+          "title": "How TypeScript Works",
+          "subtopics": [
+            "Compilation to JavaScript",
+            "Type Checking",
+            "Type Erasure"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Installing TypeScript",
+            "tsconfig.json",
+            "Using tsc CLI"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TypeScript Basics",
+      "sections": [
+        {
+          "title": "Basic Types",
+          "subtopics": [
+            "string",
+            "number",
+            "boolean",
+            "null and undefined",
+            "any",
+            "unknown",
+            "void",
+            "never"
+          ]
+        },
+        {
+          "title": "Type Inference",
+          "subtopics": [
+            "Implicit Types",
+            "Best Practices"
+          ]
+        },
+        {
+          "title": "Variables and Constants",
+          "subtopics": [
+            "let",
+            "const",
+            "Type Annotations"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "sections": [
+        {
+          "title": "Typing Functions",
+          "subtopics": [
+            "Parameter Types",
+            "Return Types",
+            "Optional Parameters",
+            "Default Parameters"
+          ]
+        },
+        {
+          "title": "Advanced Functions",
+          "subtopics": [
+            "Function Overloads",
+            "Rest Parameters",
+            "Arrow Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Objects, Arrays, and Tuples",
+      "sections": [
+        {
+          "title": "Objects",
+          "subtopics": [
+            "Object Types",
+            "Optional Properties",
+            "Readonly Properties"
+          ]
+        },
+        {
+          "title": "Arrays",
+          "subtopics": [
+            "Typed Arrays",
+            "Array Methods"
+          ]
+        },
+        {
+          "title": "Tuples",
+          "subtopics": [
+            "Fixed-length Arrays",
+            "Tuple Types"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interfaces and Type Aliases",
+      "sections": [
+        {
+          "title": "Interfaces",
+          "subtopics": [
+            "Defining Interfaces",
+            "Extending Interfaces",
+            "Implementing Interfaces"
+          ]
+        },
+        {
+          "title": "Type Aliases",
+          "subtopics": [
+            "Union Types",
+            "Intersection Types"
+          ]
+        },
+        {"title": "Interface vs Type"}
+      ]
+    },
+    {
+      "title": "Advanced Types",
+      "sections": [
+        {
+          "title": "Union and Intersection Types",
+          "subtopics": [
+            "Combining Types",
+            "Narrowing"
+          ]
+        },
+        {
+          "title": "Type Guards",
+          "subtopics": [
+            "typeof",
+            "instanceof",
+            "Custom Guards"
+          ]
+        },
+        {
+          "title": "Literal Types",
+          "subtopics": [
+            "String Literals",
+            "Numeric Literals"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generics",
+      "sections": [
+        {
+          "title": "Introduction to Generics",
+          "subtopics": [
+            "Generic Functions",
+            "Generic Interfaces"
+          ]
+        },
+        {
+          "title": "Advanced Generics",
+          "subtopics": [
+            "Constraints",
+            "Default Types",
+            "Generic Utility Types"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Classes and OOP",
+      "sections": [
+        {
+          "title": "Classes",
+          "subtopics": [
+            "Properties",
+            "Constructors",
+            "Methods"
+          ]
+        },
+        {
+          "title": "OOP Concepts",
+          "subtopics": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+          ]
+        },
+        {
+          "title": "Advanced Class Features",
+          "subtopics": [
+            "Access Modifiers",
+            "Readonly",
+            "Abstract Classes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modules and Namespaces",
+      "sections": [
+        {
+          "title": "Modules",
+          "subtopics": [
+            "import/export",
+            "ES Modules",
+            "CommonJS"
+          ]
+        },
+        {
+          "title": "Namespaces",
+          "subtopics": [
+            "Organizing Code",
+            "When to Use Namespaces"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with JavaScript",
+      "sections": [
+        {
+          "title": "TypeScript with Existing JS",
+          "subtopics": [
+            "Gradual Migration",
+            "Type Definitions"
+          ]
+        },
+        {
+          "title": "Declaration Files",
+          "subtopics": [
+            ".d.ts Files",
+            "DefinitelyTyped"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tooling and Configuration",
+      "sections": [
+        {
+          "title": "tsconfig.json",
+          "subtopics": [
+            "Compiler Options",
+            "Strict Mode"
+          ]
+        },
+        {
+          "title": "Build Tools",
+          "subtopics": [
+            "Webpack",
+            "Vite",
+            "esbuild"
+          ]
+        },
+        {
+          "title": "Linting and Formatting",
+          "subtopics": [
+            "ESLint",
+            "Prettier"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TypeScript with Frameworks",
+      "sections": [
+        {
+          "title": "React with TypeScript",
+          "subtopics": [
+            "Props Typing",
+            "Hooks",
+            "Component Types"
+          ]
+        },
+        {
+          "title": "Node.js with TypeScript",
+          "subtopics": [
+            "Express Typing",
+            "API Development"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "sections": [
+        {
+          "title": "Testing Basics",
+          "subtopics": [
+            "Unit Testing",
+            "Integration Testing"
+          ]
+        },
+        {
+          "title": "Testing Tools",
+          "subtopics": [
+            "Jest",
+            "ts-jest"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Best Practices",
+      "sections": [
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Strict Typing",
+            "Avoiding any",
+            "Code Organization"
+          ]
+        },
+        {
+          "title": "Performance",
+          "subtopics": [
+            "Build Optimization",
+            "Type Checking Performance"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Typed REST API",
+          "subtopics": [
+            "Express",
+            "Validation",
+            "Typesafe Routes"
+          ]
+        },
+        {
+          "title": "React App",
+          "subtopics": [
+            "State Management",
+            "Typed Components"
+          ]
+        },
+        {
+          "title": "Library Development",
+          "subtopics": [
+            "Reusable Packages",
+            "Type Definitions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of TypeScript",
+      "sections": [
+        {
+          "title": "New Features",
+          "subtopics": [
+            "Upcoming TS Releases",
+            "Ecosystem Trends"
+          ]
+        }
+      ]
+    }
+  ]
+}

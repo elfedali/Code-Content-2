@@ -1,0 +1,334 @@
+{
+  "title": "React Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to React",
+      "sections": [
+        {"title": "What is React?"},
+        {
+          "title": "Why Use React?",
+          "subtopics": [
+            "Component-based Architecture",
+            "Reusable UI",
+            "Virtual DOM",
+            "Strong Ecosystem"
+          ]
+        },
+        {
+          "title": "How React Works",
+          "subtopics": [
+            "Virtual DOM",
+            "Reconciliation",
+            "Rendering Cycle"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Create React App",
+            "Vite Setup",
+            "Project Structure"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JSX and Rendering",
+      "sections": [
+        {
+          "title": "Introduction to JSX",
+          "subtopics": [
+            "Syntax",
+            "Embedding Expressions",
+            "JSX vs HTML"
+          ]
+        },
+        {
+          "title": "Rendering Elements",
+          "subtopics": [
+            "Rendering Components",
+            "Fragments",
+            "Conditional Rendering"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "sections": [
+        {
+          "title": "Functional Components",
+          "subtopics": [
+            "Creating Components",
+            "Props",
+            "Default Props"
+          ]
+        },
+        {
+          "title": "Component Composition",
+          "subtopics": [
+            "Children Props",
+            "Reusability"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "State and Lifecycle",
+      "sections": [
+        {
+          "title": "State Basics",
+          "subtopics": [
+            "useState Hook",
+            "Updating State"
+          ]
+        },
+        {
+          "title": "Lifecycle with Hooks",
+          "subtopics": [
+            "useEffect",
+            "Cleanup Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Handling Events",
+      "sections": [
+        {
+          "title": "Event Handling",
+          "subtopics": [
+            "onClick",
+            "onChange",
+            "Form Events"
+          ]
+        },
+        {
+          "title": "Forms",
+          "subtopics": [
+            "Controlled Components",
+            "Form Validation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hooks",
+      "sections": [
+        {
+          "title": "Built-in Hooks",
+          "subtopics": [
+            "useState",
+            "useEffect",
+            "useContext",
+            "useRef"
+          ]
+        },
+        {
+          "title": "Advanced Hooks",
+          "subtopics": [
+            "useMemo",
+            "useCallback",
+            "Custom Hooks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "State Management",
+      "sections": [
+        {
+          "title": "Context API",
+          "subtopics": [
+            "Creating Context",
+            "Using Context"
+          ]
+        },
+        {
+          "title": "External State Management",
+          "subtopics": [
+            "Redux",
+            "Zustand"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Routing",
+      "sections": [
+        {
+          "title": "React Router",
+          "subtopics": [
+            "Routes and Links",
+            "Dynamic Routes",
+            "Nested Routes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with APIs",
+      "sections": [
+        {
+          "title": "Fetching Data",
+          "subtopics": [
+            "fetch API",
+            "Axios"
+          ]
+        },
+        {
+          "title": "Handling Async Data",
+          "subtopics": [
+            "Loading States",
+            "Error Handling"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Styling React Apps",
+      "sections": [
+        {
+          "title": "CSS in React",
+          "subtopics": [
+            "CSS Modules",
+            "Inline Styles"
+          ]
+        },
+        {
+          "title": "Styling Libraries",
+          "subtopics": [
+            "Tailwind CSS",
+            "Styled Components"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance Optimization",
+      "sections": [
+        {
+          "title": "Optimizing Rendering",
+          "subtopics": [
+            "Memoization",
+            "React.memo"
+          ]
+        },
+        {
+          "title": "Code Splitting",
+          "subtopics": [
+            "Lazy Loading",
+            "Suspense"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "sections": [
+        {
+          "title": "Testing Basics",
+          "subtopics": [
+            "Unit Testing",
+            "Component Testing"
+          ]
+        },
+        {
+          "title": "Testing Tools",
+          "subtopics": [
+            "Jest",
+            "React Testing Library"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Forms and Advanced Patterns",
+      "sections": [
+        {
+          "title": "Advanced Forms",
+          "subtopics": [
+            "Formik",
+            "React Hook Form"
+          ]
+        },
+        {
+          "title": "Patterns",
+          "subtopics": [
+            "Higher-Order Components",
+            "Render Props"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "React with TypeScript",
+      "sections": [
+        {
+          "title": "Typing Components",
+          "subtopics": [
+            "Props Types",
+            "State Types"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "sections": [
+        {
+          "title": "Building for Production",
+          "subtopics": [
+            "Build Process",
+            "Optimization"
+          ]
+        },
+        {
+          "title": "Hosting",
+          "subtopics": [
+            "Netlify",
+            "Vercel"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Todo App",
+          "subtopics": [
+            "CRUD",
+            "State Management"
+          ]
+        },
+        {
+          "title": "Dashboard App",
+          "subtopics": [
+            "Charts",
+            "Authentication"
+          ]
+        },
+        {
+          "title": "E-commerce UI",
+          "subtopics": [
+            "Product Listing",
+            "Cart System"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of React",
+      "sections": [
+        {
+          "title": "New Features",
+          "subtopics": [
+            "Server Components",
+            "React Ecosystem Trends"
+          ]
+        }
+      ]
+    }
+  ]
+}

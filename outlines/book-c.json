@@ -1,0 +1,388 @@
+{
+  "title": "C Programming Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to C",
+      "sections": [
+        {"title": "What is C?"},
+        {
+          "title": "History of C",
+          "subtopics": [
+            "Origins at Bell Labs",
+            "Dennis Ritchie",
+            "Evolution of Standards (C89, C99, C11, C18)"
+          ]
+        },
+        {
+          "title": "Why Learn C?",
+          "subtopics": [
+            "System Programming",
+            "Performance and Control",
+            "Foundation for Other Languages"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Installing GCC/Clang",
+            "Compiling Programs",
+            "Using IDEs"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "C Basics",
+      "sections": [
+        {
+          "title": "Structure of a C Program",
+          "subtopics": [
+            "main() Function",
+            "Headers",
+            "Statements"
+          ]
+        },
+        {
+          "title": "Variables and Data Types",
+          "subtopics": [
+            "int, float, double, char",
+            "Modifiers (short, long, unsigned)",
+            "Constants"
+          ]
+        },
+        {
+          "title": "Input and Output",
+          "subtopics": [
+            "printf",
+            "scanf",
+            "Format Specifiers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Operators and Expressions",
+      "sections": [
+        {
+          "title": "Operators",
+          "subtopics": [
+            "Arithmetic",
+            "Relational",
+            "Logical",
+            "Bitwise",
+            "Assignment"
+          ]
+        },
+        {
+          "title": "Expressions",
+          "subtopics": [
+            "Operator Precedence",
+            "Type Casting"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Control Flow",
+      "sections": [
+        {
+          "title": "Conditional Statements",
+          "subtopics": [
+            "if / else",
+            "switch"
+          ]
+        },
+        {
+          "title": "Loops",
+          "subtopics": [
+            "for",
+            "while",
+            "do...while"
+          ]
+        },
+        {
+          "title": "Jump Statements",
+          "subtopics": [
+            "break",
+            "continue",
+            "goto"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "sections": [
+        {
+          "title": "Function Basics",
+          "subtopics": [
+            "Declaration",
+            "Definition",
+            "Calling Functions"
+          ]
+        },
+        {
+          "title": "Function Parameters",
+          "subtopics": [
+            "Pass by Value",
+            "Return Values"
+          ]
+        },
+        {
+          "title": "Advanced Functions",
+          "subtopics": [
+            "Recursion",
+            "Inline Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arrays and Strings",
+      "sections": [
+        {
+          "title": "Arrays",
+          "subtopics": [
+            "Single-dimensional Arrays",
+            "Multi-dimensional Arrays"
+          ]
+        },
+        {
+          "title": "Strings",
+          "subtopics": [
+            "Character Arrays",
+            "String Functions",
+            "String Manipulation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pointers",
+      "sections": [
+        {
+          "title": "Pointer Basics",
+          "subtopics": [
+            "Pointer Declaration",
+            "Address and Dereferencing"
+          ]
+        },
+        {
+          "title": "Pointers and Arrays",
+          "subtopics": [
+            "Pointer Arithmetic",
+            "Arrays as Pointers"
+          ]
+        },
+        {
+          "title": "Advanced Pointers",
+          "subtopics": [
+            "Pointer to Pointer",
+            "Function Pointers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Memory Management",
+      "sections": [
+        {
+          "title": "Dynamic Memory Allocation",
+          "subtopics": [
+            "malloc",
+            "calloc",
+            "realloc",
+            "free"
+          ]
+        },
+        {
+          "title": "Memory Concepts",
+          "subtopics": [
+            "Stack vs Heap",
+            "Memory Leaks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Structures and Unions",
+      "sections": [
+        {
+          "title": "Structures",
+          "subtopics": [
+            "Defining Structures",
+            "Accessing Members"
+          ]
+        },
+        {
+          "title": "Unions",
+          "subtopics": [
+            "Memory Sharing",
+            "Use Cases"
+          ]
+        },
+        {
+          "title": "Enums",
+          "subtopics": [
+            "Enumerations"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "File Handling",
+      "sections": [
+        {
+          "title": "File Operations",
+          "subtopics": [
+            "Opening Files",
+            "Reading Files",
+            "Writing Files",
+            "Closing Files"
+          ]
+        },
+        {
+          "title": "File Modes",
+          "subtopics": [
+            "Text Mode",
+            "Binary Mode"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preprocessor and Macros",
+      "sections": [
+        {
+          "title": "Preprocessor Directives",
+          "subtopics": [
+            "#include",
+            "#define",
+            "#ifdef"
+          ]
+        },
+        {
+          "title": "Macros",
+          "subtopics": [
+            "Function-like Macros",
+            "Conditional Compilation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Error Handling and Debugging",
+      "sections": [
+        {
+          "title": "Error Handling",
+          "subtopics": [
+            "errno",
+            "perror",
+            "assert"
+          ]
+        },
+        {
+          "title": "Debugging",
+          "subtopics": [
+            "Using gdb",
+            "Debugging Techniques"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Topics",
+      "sections": [
+        {
+          "title": "Bit Manipulation",
+          "subtopics": [
+            "Bitwise Operations",
+            "Flags"
+          ]
+        },
+        {
+          "title": "Multithreading (C11)",
+          "subtopics": [
+            "Threads Basics",
+            "Synchronization"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "Optimization Techniques",
+          "subtopics": [
+            "Efficient Algorithms",
+            "Memory Optimization"
+          ]
+        },
+        {
+          "title": "Compiler Optimization",
+          "subtopics": [
+            "Optimization Flags"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System Programming",
+      "sections": [
+        {
+          "title": "Interacting with OS",
+          "subtopics": [
+            "Processes",
+            "System Calls"
+          ]
+        },
+        {
+          "title": "Low-level Programming",
+          "subtopics": [
+            "Hardware Interaction",
+            "Embedded Systems"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "CLI Tools",
+          "subtopics": [
+            "File Manager",
+            "Text Processor"
+          ]
+        },
+        {
+          "title": "Mini Projects",
+          "subtopics": [
+            "Calculator",
+            "Data Structures Implementation"
+          ]
+        },
+        {
+          "title": "System Tools",
+          "subtopics": [
+            "Process Monitor",
+            "Memory Analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future and Ecosystem",
+      "sections": [
+        {
+          "title": "Modern C",
+          "subtopics": [
+            "New Standards",
+            "Interoperability"
+          ]
+        }
+      ]
+    }
+  ]
+}

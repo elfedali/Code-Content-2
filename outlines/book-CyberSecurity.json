@@ -1,0 +1,231 @@
+{
+  "title": "Cyber Security Mastery: From Fundamentals to Advanced Defense",
+  "chapters": [
+    {
+      "title": "Introduction to Cyber Security",
+      "sections": [
+        {"title": "What is Cyber Security?"},
+        {
+          "title": "Why Security Matters",
+          "subtopics": [
+            "Data Protection",
+            "Privacy",
+            "Financial Impact"
+          ]
+        },
+        {
+          "title": "Security Domains",
+          "subtopics": [
+            "Network Security",
+            "Application Security",
+            "Cloud Security",
+            "Information Security"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Basic Security Concepts",
+      "sections": [
+        {
+          "title": "CIA Triad",
+          "subtopics": [
+            "Confidentiality",
+            "Integrity",
+            "Availability"
+          ]
+        },
+        {
+          "title": "Threats and Attacks",
+          "subtopics": [
+            "Malware",
+            "Phishing",
+            "Social Engineering"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Networking Fundamentals",
+      "sections": [
+        {
+          "title": "Network Basics",
+          "subtopics": [
+            "TCP/IP",
+            "Ports",
+            "Protocols (HTTP, HTTPS)"
+          ]
+        },
+        {
+          "title": "Firewalls and VPNs",
+          "subtopics": [
+            "Firewall Rules",
+            "VPN Concepts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cryptography",
+      "sections": [
+        {
+          "title": "Encryption Basics",
+          "subtopics": [
+            "Symmetric Encryption",
+            "Asymmetric Encryption"
+          ]
+        },
+        {
+          "title": "Hashing",
+          "subtopics": [
+            "SHA",
+            "Password Hashing"
+          ]
+        },
+        {
+          "title": "TLS/SSL",
+          "subtopics": [
+            "HTTPS",
+            "Certificates"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Web Security",
+      "sections": [
+        {
+          "title": "Common Vulnerabilities",
+          "subtopics": [
+            "SQL Injection",
+            "XSS",
+            "CSRF"
+          ]
+        },
+        {
+          "title": "Secure Coding",
+          "subtopics": [
+            "Input Validation",
+            "Output Encoding"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Authentication and Access Control",
+      "sections": [
+        {
+          "title": "Authentication Methods",
+          "subtopics": [
+            "Passwords",
+            "2FA",
+            "Biometrics"
+          ]
+        },
+        {
+          "title": "Authorization",
+          "subtopics": [
+            "RBAC",
+            "Access Control Lists"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System Security",
+      "sections": [
+        {
+          "title": "Operating System Security",
+          "subtopics": [
+            "User Permissions",
+            "Patching"
+          ]
+        },
+        {
+          "title": "Hardening Systems",
+          "subtopics": [
+            "SSH Security",
+            "Disabling Unused Services"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cloud and DevSecOps",
+      "sections": [
+        {
+          "title": "Cloud Security",
+          "subtopics": [
+            "Shared Responsibility Model",
+            "IAM"
+          ]
+        },
+        {
+          "title": "DevSecOps",
+          "subtopics": [
+            "Security in CI/CD",
+            "Automated Scanning"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monitoring and Incident Response",
+      "sections": [
+        {
+          "title": "Monitoring",
+          "subtopics": [
+            "Logs",
+            "SIEM"
+          ]
+        },
+        {
+          "title": "Incident Response",
+          "subtopics": [
+            "Detection",
+            "Containment",
+            "Recovery"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ethical Hacking",
+      "sections": [
+        {
+          "title": "Penetration Testing",
+          "subtopics": [
+            "Reconnaissance",
+            "Exploitation"
+          ]
+        },
+        {
+          "title": "Tools",
+          "subtopics": [
+            "Nmap",
+            "Metasploit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Secure a Web App",
+          "subtopics": [
+            "Fix Vulnerabilities",
+            "Add Authentication"
+          ]
+        },
+        {
+          "title": "Server Hardening",
+          "subtopics": [
+            "Firewall Setup",
+            "Fail2Ban"
+          ]
+        }
+      ]
+    }
+  ]
+}

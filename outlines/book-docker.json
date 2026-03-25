@@ -1,0 +1,359 @@
+{
+  "title": "Docker & VPS Hosting Mastery: From Setup to Production",
+  "chapters": [
+    {
+      "title": "Introduction to VPS and Docker",
+      "sections": [
+        {"title": "What is a VPS?"},
+        {
+          "title": "Why Use a VPS?",
+          "subtopics": [
+            "Full Control",
+            "Scalability",
+            "Cost Efficiency"
+          ]
+        },
+        {"title": "What is Docker?"},
+        {
+          "title": "Why Use Docker?",
+          "subtopics": [
+            "Containerization",
+            "Consistency Across Environments",
+            "Easy Deployment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started with a VPS",
+      "sections": [
+        {
+          "title": "Choosing a Provider",
+          "subtopics": [
+            "DigitalOcean",
+            "AWS",
+            "Vultr",
+            "Hetzner"
+          ]
+        },
+        {
+          "title": "Creating a Server",
+          "subtopics": [
+            "Selecting OS (Ubuntu)",
+            "Setting SSH Keys"
+          ]
+        },
+        {
+          "title": "Connecting to VPS",
+          "subtopics": [
+            "SSH Basics",
+            "Initial Setup"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Linux Server Setup",
+      "sections": [
+        {
+          "title": "System Update",
+          "subtopics": [
+            "apt update",
+            "apt upgrade"
+          ]
+        },
+        {
+          "title": "Creating Users",
+          "subtopics": [
+            "adduser",
+            "sudo privileges"
+          ]
+        },
+        {
+          "title": "Basic Security",
+          "subtopics": [
+            "Firewall (ufw)",
+            "Disabling Root Login",
+            "SSH Hardening"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Installing Docker",
+      "sections": [
+        {
+          "title": "Docker Installation",
+          "subtopics": [
+            "Install Docker Engine",
+            "Docker CLI"
+          ]
+        },
+        {
+          "title": "Docker Basics",
+          "subtopics": [
+            "Images",
+            "Containers",
+            "Volumes",
+            "Networks"
+          ]
+        },
+        {
+          "title": "Docker Commands",
+          "subtopics": [
+            "docker run",
+            "docker ps",
+            "docker build",
+            "docker logs"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with Docker",
+      "sections": [
+        {
+          "title": "Building Images",
+          "subtopics": [
+            "Dockerfile",
+            "Layers",
+            "Best Practices"
+          ]
+        },
+        {
+          "title": "Managing Containers",
+          "subtopics": [
+            "Start/Stop",
+            "Restart Policies"
+          ]
+        },
+        {
+          "title": "Volumes and Persistence",
+          "subtopics": [
+            "Data Persistence",
+            "Bind Mounts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Docker Compose",
+      "sections": [
+        {
+          "title": "Introduction to Docker Compose",
+          "subtopics": [
+            "docker-compose.yml",
+            "Services"
+          ]
+        },
+        {
+          "title": "Multi-container Apps",
+          "subtopics": [
+            "App + Database",
+            "Networking Between Services"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deploying Applications",
+      "sections": [
+        {
+          "title": "Deploying a Web App",
+          "subtopics": [
+            "Node.js App",
+            "PHP App",
+            "React Build"
+          ]
+        },
+        {
+          "title": "Reverse Proxy",
+          "subtopics": [
+            "Nginx Setup",
+            "Routing Domains"
+          ]
+        },
+        {
+          "title": "Environment Variables",
+          "subtopics": [
+            ".env Files",
+            "Secrets Management"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Domain and SSL",
+      "sections": [
+        {
+          "title": "Connecting a Domain",
+          "subtopics": [
+            "DNS Configuration",
+            "A Records"
+          ]
+        },
+        {
+          "title": "SSL Setup",
+          "subtopics": [
+            "Let's Encrypt",
+            "HTTPS Configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CI/CD and Automation",
+      "sections": [
+        {
+          "title": "Continuous Deployment",
+          "subtopics": [
+            "GitHub Actions",
+            "Auto Deploy"
+          ]
+        },
+        {
+          "title": "Automation",
+          "subtopics": [
+            "Shell Scripts",
+            "Cron Jobs"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monitoring and Logging",
+      "sections": [
+        {
+          "title": "Logs",
+          "subtopics": [
+            "docker logs",
+            "Centralized Logging"
+          ]
+        },
+        {
+          "title": "Monitoring",
+          "subtopics": [
+            "CPU / RAM Usage",
+            "Uptime Monitoring"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security Best Practices",
+      "sections": [
+        {
+          "title": "Docker Security",
+          "subtopics": [
+            "Non-root Containers",
+            "Image Scanning"
+          ]
+        },
+        {
+          "title": "Server Security",
+          "subtopics": [
+            "Firewall Rules",
+            "Fail2Ban"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scaling and Performance",
+      "sections": [
+        {
+          "title": "Scaling Containers",
+          "subtopics": [
+            "Horizontal Scaling",
+            "Load Balancing"
+          ]
+        },
+        {
+          "title": "Performance Optimization",
+          "subtopics": [
+            "Caching",
+            "Resource Limits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Backups and Recovery",
+      "sections": [
+        {
+          "title": "Backup Strategies",
+          "subtopics": [
+            "Database Backups",
+            "Volume Backups"
+          ]
+        },
+        {
+          "title": "Recovery",
+          "subtopics": [
+            "Restoring Data",
+            "Disaster Recovery"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Full-stack App Deployment",
+          "subtopics": [
+            "Frontend + Backend + DB",
+            "Docker Compose Setup"
+          ]
+        },
+        {
+          "title": "WordPress Hosting",
+          "subtopics": [
+            "PHP + MySQL",
+            "Persistent Storage"
+          ]
+        },
+        {
+          "title": "API Deployment",
+          "subtopics": [
+            "Node.js API",
+            "Nginx Reverse Proxy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Topics",
+      "sections": [
+        {
+          "title": "Orchestration",
+          "subtopics": [
+            "Docker Swarm",
+            "Kubernetes Basics"
+          ]
+        },
+        {
+          "title": "Cloud Integration",
+          "subtopics": [
+            "Deploying to AWS",
+            "Using Managed Services"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Final: Production Checklist",
+      "sections": [
+        {
+          "title": "Deployment Checklist",
+          "subtopics": [
+            "Security",
+            "Backups",
+            "Monitoring",
+            "Scaling"
+          ]
+        }
+      ]
+    }
+  ]
+}

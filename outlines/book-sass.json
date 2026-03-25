@@ -1,0 +1,250 @@
+{
+  "title": "Sass & CSS Framework Mastery: From Preprocessor to Your Own Design System",
+  "chapters": [
+    {
+      "title": "Introduction to Sass",
+      "sections": [
+        {"title": "What is Sass?"},
+        {
+          "title": "Why Use Sass?",
+          "subtopics": [
+            "Maintainable CSS",
+            "Reusable Code",
+            "Better Organization"
+          ]
+        },
+        {
+          "title": "Sass vs CSS",
+          "subtopics": [
+            "Features Comparison",
+            "When to Use Sass"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "sections": [
+        {
+          "title": "Installing Sass",
+          "subtopics": [
+            "npm install sass",
+            "CLI Usage"
+          ]
+        },
+        {
+          "title": "Project Structure",
+          "subtopics": [
+            "SCSS Files",
+            "Partials"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Sass Features",
+      "sections": [
+        {
+          "title": "Variables",
+          "subtopics": [
+            "Colors",
+            "Spacing",
+            "Typography"
+          ]
+        },
+        {
+          "title": "Nesting",
+          "subtopics": [
+            "Cleaner Selectors",
+            "Avoiding Over-Nesting"
+          ]
+        },
+        {
+          "title": "Mixins",
+          "subtopics": [
+            "Reusable Styles",
+            "Parameters"
+          ]
+        },
+        {
+          "title": "Functions",
+          "subtopics": [
+            "Custom Functions",
+            "Built-in Functions"
+          ]
+        },
+        {
+          "title": "Partials and Imports",
+          "subtopics": [
+            "@use",
+            "@forward"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Sass",
+      "sections": [
+        {
+          "title": "Control Directives",
+          "subtopics": [
+            "@if",
+            "@for",
+            "@each"
+          ]
+        },
+        {
+          "title": "Maps and Lists",
+          "subtopics": [
+            "Design Tokens",
+            "Theming"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Design Systems",
+      "sections": [
+        {
+          "title": "What is a Design System?",
+          "subtopics": [
+            "Consistency",
+            "Scalability"
+          ]
+        },
+        {
+          "title": "Design Tokens",
+          "subtopics": [
+            "Colors",
+            "Spacing",
+            "Typography"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Building a CSS Framework",
+      "sections": [
+        {
+          "title": "Framework Architecture",
+          "subtopics": [
+            "Base Styles",
+            "Utilities",
+            "Components"
+          ]
+        },
+        {
+          "title": "Utility Classes",
+          "subtopics": [
+            "Spacing (margin, padding)",
+            "Flexbox",
+            "Grid"
+          ]
+        },
+        {
+          "title": "Components",
+          "subtopics": [
+            "Buttons",
+            "Cards",
+            "Forms",
+            "Navbar"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "sections": [
+        {
+          "title": "Breakpoints",
+          "subtopics": [
+            "Mobile-first",
+            "Media Queries"
+          ]
+        },
+        {
+          "title": "Responsive Utilities",
+          "subtopics": [
+            "Grid System",
+            "Visibility Classes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Theming and Customization",
+      "sections": [
+        {
+          "title": "Themes",
+          "subtopics": [
+            "Light/Dark Mode",
+            "Custom Themes"
+          ]
+        },
+        {
+          "title": "Customization API",
+          "subtopics": [
+            "Config Variables",
+            "Overrides"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Optimization",
+      "sections": [
+        {
+          "title": "CSS Optimization",
+          "subtopics": [
+            "Minification",
+            "PurgeCSS"
+          ]
+        },
+        {
+          "title": "Performance",
+          "subtopics": [
+            "Reducing Bundle Size"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Publishing Your Framework",
+      "sections": [
+        {
+          "title": "Packaging",
+          "subtopics": [
+            "npm Package",
+            "Versioning"
+          ]
+        },
+        {
+          "title": "Documentation",
+          "subtopics": [
+            "Examples",
+            "Usage Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Build a Mini Tailwind-like Framework",
+          "subtopics": [
+            "Utilities System",
+            "Configuration"
+          ]
+        },
+        {
+          "title": "UI Kit",
+          "subtopics": [
+            "Reusable Components",
+            "Theme Support"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>$if(title)$$title$$else$Book$endif$</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- highlight.js (dark theme) -->
+  <link href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+
+  <style>
+    /* ── Layout ──────────────────────────────────────────────────────────── */
+    :root {
+      --sidebar-width: 280px;
+      --header-height: 60px;
+      --accent: #6c63ff;
+      --accent-light: rgba(108, 99, 255, 0.12);
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+    }
+
+    /* ── Top header ──────────────────────────────────────────────────────── */
+    .top-header {
+      height: var(--header-height);
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      gap: 16px;
+    }
+
+    .top-header .book-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #e6edf3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .top-header .book-meta {
+      font-size: 0.78rem;
+      color: #8b949e;
+    }
+
+    .top-header .badge-accent {
+      background: var(--accent);
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 20px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ── Sidebar ─────────────────────────────────────────────────────────── */
+    .sidebar {
+      width: var(--sidebar-width);
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      bottom: 0;
+      background: #161b22;
+      border-right: 1px solid #30363d;
+      overflow-y: auto;
+      padding: 20px 0 40px;
+      z-index: 100;
+    }
+
+    .sidebar-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #8b949e;
+      padding: 0 20px 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 6px 20px;
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.83rem;
+      line-height: 1.4;
+      border-left: 3px solid transparent;
+      transition: color .15s, border-color .15s, background .15s;
+    }
+
+    .sidebar a:hover {
+      color: #e6edf3;
+      background: rgba(255,255,255,.04);
+      border-left-color: #444;
+    }
+
+    .sidebar a.toc-h1 {
+      font-weight: 700;
+      color: #c9d1d9;
+      font-size: 0.85rem;
+      margin-top: 14px;
+      padding-top: 8px;
+      border-top: 1px solid #21262d;
+    }
+
+    .sidebar a.toc-h2 {
+      padding-left: 36px;
+    }
+
+    .sidebar a.toc-h3 {
+      padding-left: 52px;
+      font-size: 0.78rem;
+    }
+
+    /* ── Main content ────────────────────────────────────────────────────── */
+    .main-wrapper {
+      margin-left: var(--sidebar-width);
+      margin-top: var(--header-height);
+      padding: 48px 56px 80px;
+      max-width: 900px;
+    }
+
+    /* ── Title block ─────────────────────────────────────────────────────── */
+    .book-title-block {
+      padding: 60px 0 48px;
+      border-bottom: 1px solid #30363d;
+      margin-bottom: 64px;
+    }
+
+    .book-title-block h1.main-title {
+      font-size: 2.6rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .book-title-block .subtitle {
+      color: #8b949e;
+      font-size: 1rem;
+    }
+
+    /* ── Headings ────────────────────────────────────────────────────────── */
+    h1 { font-size: 1.75rem; font-weight: 800; color: #e6edf3; margin: 60px 0 20px; padding-bottom: 12px; border-bottom: 1px solid #30363d; }
+    h2 { font-size: 1.3rem;  font-weight: 700; color: #c9d1d9; margin: 40px 0 14px; }
+    h3 { font-size: 1.1rem;  font-weight: 700; color: #a78bfa; margin: 28px 0 10px; }
+    h4 { font-size: 0.9rem;  font-weight: 700; color: #8b949e;  margin: 20px 0 8px; text-transform: uppercase; letter-spacing: .5px; }
+
+    /* ── Paragraphs ──────────────────────────────────────────────────────── */
+    p { margin-bottom: 16px; line-height: 1.75; }
+    strong { color: #e6edf3; }
+    em { color: #a78bfa; font-style: italic; }
+    a { color: var(--accent); }
+
+    /* ── Lists ───────────────────────────────────────────────────────────── */
+    ul, ol { margin: 0 0 16px 24px; padding: 0; }
+    li { margin-bottom: 6px; line-height: 1.65; }
+
+    /* ── Code ────────────────────────────────────────────────────────────── */
+    code {
+      font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+      font-size: 0.875em;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 5px;
+      padding: 2px 6px;
+      color: #f0883e;
+    }
+
+    pre {
+      background: #161b22 !important;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      margin: 20px 0;
+      overflow-x: auto;
+      position: relative;
+    }
+
+    pre code {
+      background: none !important;
+      border: none !important;
+      padding: 20px 22px;
+      display: block;
+      color: #c9d1d9;
+      font-size: 0.85em;
+      line-height: 1.65;
+    }
+
+    /* language badge on code blocks */
+    pre[class*="language-"]::before,
+    pre code[class*="language-"]::before {
+      content: attr(data-lang);
+    }
+
+    .code-block-wrap { position: relative; }
+
+    .code-lang-badge {
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      background: #21262d;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    /* ── Blockquotes ─────────────────────────────────────────────────────── */
+    blockquote {
+      border-left: 4px solid var(--accent);
+      margin: 24px 0;
+      padding: 14px 22px;
+      background: var(--accent-light);
+      border-radius: 0 8px 8px 0;
+      color: #8b949e;
+      font-style: italic;
+    }
+
+    blockquote p { margin: 0; }
+
+    /* ── Tables ──────────────────────────────────────────────────────────── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.88rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    thead th {
+      background: #21262d;
+      color: #e6edf3;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    tbody td {
+      padding: 9px 16px;
+      border-bottom: 1px solid #21262d;
+      color: #c9d1d9;
+    }
+
+    tbody tr:hover td { background: rgba(255,255,255,.03); }
+
+    /* ── HR ──────────────────────────────────────────────────────────────── */
+    hr { border: none; border-top: 1px solid #30363d; margin: 36px 0; }
+
+    /* ── Scrollbar ───────────────────────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 99px; }
+    ::-webkit-scrollbar-thumb:hover { background: #8b949e; }
+
+    /* ── Print ───────────────────────────────────────────────────────────── */
+    @media print {
+      .sidebar, .top-header { display: none !important; }
+      .main-wrapper { margin: 0; padding: 0; max-width: 100%; }
+      body { background: #fff; color: #000; }
+      pre { background: #f4f4f4 !important; border: 1px solid #ccc; }
+      pre code { color: #000; }
+      h1,h2,h3 { color: #000; }
+    }
+
+    /* ── Responsive ──────────────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .sidebar { display: none; }
+      .main-wrapper { margin-left: 0; padding: 24px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Top header ─────────────────────────────────────────────────────────── -->
+<header class="top-header">
+  <i class="bi bi-book-half fs-4 text-primary"></i>
+  <div class="flex-grow-1 overflow-hidden">
+    <div class="book-title">$if(title)$$title$$endif$</div>
+    <div class="book-meta">$if(date)$$date$$endif$$if(author)$ · $author$$endif$</div>
+  </div>
+  <span class="badge-accent">📖 e-Book</span>
+</header>
+
+<!-- ── Sidebar TOC ────────────────────────────────────────────────────────── -->
+$if(toc)$
+<nav class="sidebar">
+  <div class="sidebar-label"><i class="bi bi-list-ul me-1"></i>Contents</div>
+  $toc$
+</nav>
+$endif$
+
+<!-- ── Main content ──────────────────────────────────────────────────────── -->
+<main class="main-wrapper">
+
+  <!-- Title block -->
+  <div class="book-title-block">
+    $if(title)$
+    <h1 class="main-title">$title$</h1>
+    $endif$
+    <div class="subtitle">
+      $if(author)$<span><i class="bi bi-person me-1"></i>$author$</span>$endif$
+      $if(date)$<span class="ms-3"><i class="bi bi-calendar3 me-1"></i>$date$</span>$endif$
+    </div>
+  </div>
+
+  $body$
+
+</main>
+
+<!-- Bootstrap JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // ── highlight.js ──────────────────────────────────────────────────────────
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("pre code").forEach(block => {
+      hljs.highlightElement(block);
+
+      // Add language badge
+      const lang = block.className.match(/language-(\w+)/);
+      if (lang) {
+        const badge = document.createElement("span");
+        badge.className = "code-lang-badge";
+        badge.textContent = lang[1];
+        block.parentElement.style.position = "relative";
+        block.parentElement.appendChild(badge);
+      }
+    });
+
+    // ── Sidebar active-link highlight on scroll ────────────────────────────
+    const headings = Array.from(document.querySelectorAll("main h1, main h2, main h3"));
+    const links    = Array.from(document.querySelectorAll(".sidebar a"));
+
+    if (headings.length && links.length) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            links.forEach(l => l.style.color = "");
+            const id = e.target.getAttribute("id");
+            const active = links.find(l => l.getAttribute("href") === "#" + id);
+            if (active) {
+              active.style.color = "#a78bfa";
+              active.style.borderLeftColor = "#6c63ff";
+            }
+          }
+        });
+      }, { rootMargin: "-10% 0px -80% 0px" });
+
+      headings.forEach(h => { if (h.id) observer.observe(h); });
+    }
+  });
+</script>
+</body>
+</html>

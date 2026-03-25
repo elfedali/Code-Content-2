@@ -1,0 +1,364 @@
+{
+  "title": "C++ Mastery: Everything You Need to Know",
+  "chapters": [
+    {
+      "title": "Introduction to C++",
+      "sections": [
+        {"title": "What is C++?"},
+        {
+          "title": "History of C++",
+          "subtopics": [
+            "Bjarne Stroustrup",
+            "Evolution from C",
+            "C++ Standards (C++98, C++11, C++17, C++20)"
+          ]
+        },
+        {
+          "title": "Why Learn C++?",
+          "subtopics": [
+            "Performance and Control",
+            "System Programming",
+            "Game Development",
+            "Competitive Programming"
+          ]
+        },
+        {
+          "title": "Setting Up Environment",
+          "subtopics": [
+            "Installing Compilers (GCC, Clang, MSVC)",
+            "Compiling and Running Programs",
+            "Using IDEs"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "C++ Basics",
+      "sections": [
+        {
+          "title": "Structure of a Program",
+          "subtopics": [
+            "main() Function",
+            "Headers",
+            "Namespaces"
+          ]
+        },
+        {
+          "title": "Variables and Data Types",
+          "subtopics": [
+            "int, float, double, char, bool",
+            "auto Keyword",
+            "Constants"
+          ]
+        },
+        {
+          "title": "Input and Output",
+          "subtopics": [
+            "cin and cout",
+            "Formatting Output"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Operators and Control Flow",
+      "sections": [
+        {
+          "title": "Operators",
+          "subtopics": [
+            "Arithmetic",
+            "Relational",
+            "Logical",
+            "Bitwise",
+            "Assignment"
+          ]
+        },
+        {
+          "title": "Control Statements",
+          "subtopics": [
+            "if / else",
+            "switch"
+          ]
+        },
+        {
+          "title": "Loops",
+          "subtopics": [
+            "for",
+            "while",
+            "do...while",
+            "range-based for"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "sections": [
+        {
+          "title": "Function Basics",
+          "subtopics": [
+            "Declaration",
+            "Definition",
+            "Parameters",
+            "Return Types"
+          ]
+        },
+        {
+          "title": "Advanced Functions",
+          "subtopics": [
+            "Function Overloading",
+            "Default Arguments",
+            "Inline Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pointers and References",
+      "sections": [
+        {
+          "title": "Pointers",
+          "subtopics": [
+            "Pointer Basics",
+            "Pointer Arithmetic"
+          ]
+        },
+        {
+          "title": "References",
+          "subtopics": [
+            "Reference Variables",
+            "Pass by Reference"
+          ]
+        },
+        {
+          "title": "Memory Management",
+          "subtopics": [
+            "new and delete",
+            "Smart Pointers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arrays, Strings, and STL Containers",
+      "sections": [
+        {
+          "title": "Arrays",
+          "subtopics": [
+            "Static Arrays",
+            "Dynamic Arrays"
+          ]
+        },
+        {
+          "title": "Strings",
+          "subtopics": [
+            "C-style Strings",
+            "std::string"
+          ]
+        },
+        {
+          "title": "STL Containers",
+          "subtopics": [
+            "vector",
+            "list",
+            "map",
+            "set"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "sections": [
+        {
+          "title": "Classes and Objects",
+          "subtopics": [
+            "Properties",
+            "Methods",
+            "Constructors",
+            "Destructors"
+          ]
+        },
+        {
+          "title": "OOP Concepts",
+          "subtopics": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism",
+            "Abstraction"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Operator Overloading",
+      "sections": [
+        {
+          "title": "Overloading Operators",
+          "subtopics": [
+            "+, -, *, /",
+            "Comparison Operators"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Templates and Generic Programming",
+      "sections": [
+        {
+          "title": "Function Templates",
+          "subtopics": [
+            "Generic Functions"
+          ]
+        },
+        {
+          "title": "Class Templates",
+          "subtopics": [
+            "Generic Classes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exception Handling",
+      "sections": [
+        {
+          "title": "Exceptions",
+          "subtopics": [
+            "try, catch, throw"
+          ]
+        },
+        {"title": "Custom Exceptions"}
+      ]
+    },
+    {
+      "title": "Standard Template Library (STL)",
+      "sections": [
+        {
+          "title": "Algorithms",
+          "subtopics": [
+            "sort",
+            "find",
+            "count"
+          ]
+        },
+        {
+          "title": "Iterators",
+          "subtopics": [
+            "Iterator Types",
+            "Traversal"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "File Handling",
+      "sections": [
+        {
+          "title": "File Streams",
+          "subtopics": [
+            "ifstream",
+            "ofstream",
+            "fstream"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modern C++ Features",
+      "sections": [
+        {
+          "title": "C++11 and Beyond",
+          "subtopics": [
+            "auto",
+            "lambda expressions",
+            "range-based loops"
+          ]
+        },
+        {
+          "title": "Advanced Features",
+          "subtopics": [
+            "move semantics",
+            "rvalue references",
+            "constexpr"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multithreading",
+      "sections": [
+        {
+          "title": "Threads",
+          "subtopics": [
+            "std::thread",
+            "Joining and Detaching"
+          ]
+        },
+        {
+          "title": "Synchronization",
+          "subtopics": [
+            "mutex",
+            "locks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance and Optimization",
+      "sections": [
+        {
+          "title": "Efficient Coding",
+          "subtopics": [
+            "Memory Optimization",
+            "Algorithm Efficiency"
+          ]
+        },
+        {
+          "title": "Compiler Optimization",
+          "subtopics": [
+            "Optimization Flags"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "CLI Applications",
+          "subtopics": [
+            "File Processor",
+            "Calculator"
+          ]
+        },
+        {
+          "title": "Game Development Basics",
+          "subtopics": [
+            "Simple Game Logic"
+          ]
+        },
+        {
+          "title": "Data Structures Implementation",
+          "subtopics": [
+            "Linked List",
+            "Stack",
+            "Queue"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future of C++",
+      "sections": [
+        {
+          "title": "Modern Trends",
+          "subtopics": [
+            "C++20 and Beyond",
+            "High-performance Computing"
+          ]
+        }
+      ]
+    }
+  ]
+}

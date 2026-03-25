@@ -1,0 +1,180 @@
+{
+  "title": "Git Mastery: Version Control for Professionals",
+  "chapters": [
+    {
+      "title": "Introduction to Git",
+      "sections": [
+        {"title": "What is Git?"},
+        {
+          "title": "Why Use Git?",
+          "subtopics": [
+            "Version Control",
+            "Collaboration",
+            "History Tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "sections": [
+        {
+          "title": "Installation and Setup",
+          "subtopics": [
+            "git config",
+            "User Identity"
+          ]
+        },
+        {
+          "title": "Basic Workflow",
+          "subtopics": [
+            "Working Directory",
+            "Staging Area",
+            "Repository"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Commands",
+      "sections": [
+        {
+          "title": "Basic Commands",
+          "subtopics": [
+            "git init",
+            "git clone",
+            "git add",
+            "git commit"
+          ]
+        },
+        {
+          "title": "Inspecting Changes",
+          "subtopics": [
+            "git status",
+            "git log",
+            "git diff"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Branches and Merging",
+      "sections": [
+        {
+          "title": "Branching",
+          "subtopics": [
+            "git branch",
+            "git checkout",
+            "git switch"
+          ]
+        },
+        {
+          "title": "Merging",
+          "subtopics": [
+            "git merge",
+            "Merge Conflicts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Remote Repositories",
+      "sections": [
+        {
+          "title": "Working with Remotes",
+          "subtopics": [
+            "git remote",
+            "git push",
+            "git pull"
+          ]
+        },
+        {
+          "title": "Collaboration",
+          "subtopics": [
+            "Pull Requests",
+            "Code Reviews"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Git",
+      "sections": [
+        {
+          "title": "Rewriting History",
+          "subtopics": [
+            "git rebase",
+            "git amend"
+          ]
+        },
+        {
+          "title": "Stashing",
+          "subtopics": [
+            "git stash"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Git Workflows",
+      "sections": [
+        {
+          "title": "Popular Workflows",
+          "subtopics": [
+            "Git Flow",
+            "Trunk-based Development"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Debugging and Recovery",
+      "sections": [
+        {
+          "title": "Undo Changes",
+          "subtopics": [
+            "git reset",
+            "git revert"
+          ]
+        },
+        {
+          "title": "Recovery",
+          "subtopics": [
+            "git reflog"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Best Practices",
+      "sections": [
+        {
+          "title": "Commit Messages",
+          "subtopics": [
+            "Clear Messages",
+            "Atomic Commits"
+          ]
+        },
+        {
+          "title": "Branch Strategy",
+          "subtopics": [
+            "Feature Branches",
+            "Clean History"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Team Collaboration",
+          "subtopics": [
+            "PR Workflow",
+            "Conflict Resolution"
+          ]
+        }
+      ]
+    }
+  ]
+}

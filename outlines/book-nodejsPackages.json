@@ -1,0 +1,198 @@
+{
+  "title": "Node.js Ecosystem Mastery: Most Used Packages in Real Projects",
+  "chapters": [
+    {
+      "title": "Introduction to Node.js Ecosystem",
+      "sections": [
+        {"title": "What is npm?"},
+        {
+          "title": "Managing Dependencies",
+          "subtopics": [
+            "package.json",
+            "package-lock.json"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Web Frameworks",
+      "sections": [
+        {
+          "title": "Express.js",
+          "subtopics": [
+            "Routing",
+            "Middleware"
+          ]
+        },
+        {
+          "title": "Fastify",
+          "subtopics": [
+            "Performance",
+            "Plugins"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database and ORM",
+      "sections": [
+        {
+          "title": "MongoDB",
+          "subtopics": [
+            "Mongoose"
+          ]
+        },
+        {
+          "title": "SQL ORMs",
+          "subtopics": [
+            "Sequelize",
+            "Prisma"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "sections": [
+        {
+          "title": "Auth Libraries",
+          "subtopics": [
+            "jsonwebtoken",
+            "bcrypt"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Validation",
+      "sections": [
+        {
+          "title": "Validation Libraries",
+          "subtopics": [
+            "Joi",
+            "Zod",
+            "Yup"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "HTTP and APIs",
+      "sections": [
+        {
+          "title": "HTTP Clients",
+          "subtopics": [
+            "axios",
+            "node-fetch"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Environment and Config",
+      "sections": [
+        {
+          "title": "Configuration",
+          "subtopics": [
+            "dotenv"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Logging and Monitoring",
+      "sections": [
+        {
+          "title": "Logging",
+          "subtopics": [
+            "winston",
+            "pino"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "File Handling",
+      "sections": [
+        {
+          "title": "Uploads",
+          "subtopics": [
+            "multer"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real-time Applications",
+      "sections": [
+        {
+          "title": "WebSockets",
+          "subtopics": [
+            "socket.io"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Queues and Jobs",
+      "sections": [
+        {
+          "title": "Background Jobs",
+          "subtopics": [
+            "bull",
+            "agenda"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "sections": [
+        {
+          "title": "Testing Tools",
+          "subtopics": [
+            "jest",
+            "supertest"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Security Middleware",
+          "subtopics": [
+            "helmet",
+            "cors",
+            "rate-limiter"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dev Tools",
+      "sections": [
+        {
+          "title": "Development Tools",
+          "subtopics": [
+            "nodemon",
+            "concurrently"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Building a Real Backend Stack",
+      "sections": [
+        {
+          "title": "Production Setup",
+          "subtopics": [
+            "Express + Prisma + Redis",
+            "Auth + Validation + Logging"
+          ]
+        }
+      ]
+    }
+  ]
+}

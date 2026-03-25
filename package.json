@@ -9,7 +9,14 @@
     "generate": "node worker.js",
     "generate:book": "node worker.js",
     "generate:book:all": "node worker.js --all",
-    "generate:book:bg": "node worker.js --all --detach"
+    "generate:book:bg": "node worker.js --all --detach",
+    "export:pdf": "node scripts/export-pdf.js",
+    "export:pdf:css": "node scripts/export-pdf.js book-css",
+    "export:pdf:html": "node scripts/export-pdf.js book-html",
+    "export:pdf:js": "node scripts/export-pdf.js book-js",
+    "export:pdf:python": "node scripts/export-pdf.js book-python",
+    "export:pdf:linux": "node scripts/export-pdf.js book-linux",
+    "export:all": "for book in books/*/; do node scripts/export-pdf.js \"$(basename $book)\"; done"
   },
   "dependencies": {
     "axios": "^1.6.0",
