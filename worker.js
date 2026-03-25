@@ -21,8 +21,8 @@
 require("dotenv").config();
 const fs   = require("fs");
 const path = require("path");
-const { spawn } = require("child_process");
-const { generateBook, generateAll, loadOutline } = require("./src/controllers/generationController");
+const { spawn, spawnSync } = require("child_process");
+const { generateBook, generateAll, loadOutline, loadAllOutlines } = require("./src/controllers/generationController");
 
 const logsDir  = path.join(__dirname, "logs");
 const logFile  = path.join(logsDir, "worker.log");
@@ -49,6 +49,50 @@ function spawnDetached() {
   console.log(`🌐 Dashboard: http://localhost:${process.env.PORT || 4040}`);
   console.log(`\n   You can safely close this terminal.\n`);
   process.exit(0);
+}
+
+// ── Git auto-push ────────────────────────────────────────────────────────────
+function gitCommitPush(bookId, title, result) {
+  // Only commit if something was actually written
+  if (result.created === 0) {
+    console.log(`\n⏭️  Git: nothing new to commit for ${bookId}\n`);
+    return;
+  }
+
+  const run = (cmd, args, opts = {}) =>
+    spawnSync(cmd, args, { encoding: "utf8", cwd: __dirname, ...opts });
+
+  console.log(`\n📦 Git: committing ${bookId}…`);
+
+  // Stage the book folder
+  const add = run("git", ["add", `books/${bookId}/`]);
+  if (add.status !== 0) {
+    console.error(`   ❌ git add failed:\n${add.stderr}`);
+    return;
+  }
+
+  const msg =
+    `📚 ${title}: generation complete` +
+    ` — ${result.created} created, ${result.skipped} skipped, ${result.failed} failed`;
+
+  const commit = run("git", ["commit", "-m", msg]);
+  if (commit.status !== 0) {
+    // "nothing to commit" is exit 1 but not a real error
+    if (commit.stdout.includes("nothing to commit")) {
+      console.log(`   ⏭️  Nothing new to commit.`);
+    } else {
+      console.error(`   ❌ git commit failed:\n${commit.stderr || commit.stdout}`);
+    }
+    return;
+  }
+  console.log(`   ✅ Committed: ${msg}`);
+
+  const push = run("git", ["push"]);
+  if (push.status !== 0) {
+    console.error(`   ❌ git push failed:\n${push.stderr}`);
+  } else {
+    console.log(`   🚀 Pushed to remote.\n`);
+  }
 }
 
 // ── Progress callback ────────────────────────────────────────────────────────
@@ -94,9 +138,9 @@ async function main() {
     console.log(`   ⏭️  Skipped : ${result.skipped}`);
     console.log(`   ❌ Failed  : ${result.failed}`);
     console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
+    gitCommitPush(targetBook, outline.title, result);
   } else {
-    // All books mode — auto-discover every outlines/book*.json
-    const { loadAllOutlines } = require("./src/controllers/generationController");
+    // All books mode — iterate manually so we can git-push after each book
     const queue = loadAllOutlines();
 
     if (queue.length === 0) {
@@ -110,7 +154,15 @@ async function main() {
     });
     console.log("");
 
-    await generateAll({ onProgress });
+    for (const { bookId, outline } of queue) {
+      console.log(`\n📚 Book: ${outline.title} (${bookId})`);
+      const result = await generateBook(bookId, outline, { onProgress });
+      console.log(
+        `   ✅ ${result.created} created  ⏭️  ${result.skipped} skipped  ❌ ${result.failed} failed`
+      );
+      gitCommitPush(bookId, outline.title, result);
+    }
+
     console.log("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     console.log("🎉 All books generation complete!");
     console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");

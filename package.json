@@ -10,6 +10,8 @@
     "generate:book": "node worker.js",
     "generate:book:all": "node worker.js --all",
     "generate:book:bg": "node worker.js --all --detach",
+    "generate:book:ps": "pgrep -a -f 'worker.js' || echo 'No worker process running'",
+    "generate:book:kill": "pkill -f 'worker.js' && echo 'Worker stopped' || echo 'No worker process found'",
     "export:pdf": "node scripts/export-pdf.js",
     "export:pdf:css": "node scripts/export-pdf.js book-css",
     "export:pdf:html": "node scripts/export-pdf.js book-html",
