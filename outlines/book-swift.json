@@ -1,0 +1,136 @@
+{
+  "title": "Swift Mastery: From Basics to iOS Development",
+  "chapters": [
+    {
+      "title": "Introduction to Swift",
+      "sections": [
+        {"title": "What is Swift?"},
+        {
+          "title": "Why Swift?",
+          "subtopics": [
+            "Performance",
+            "Safety"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Basics",
+      "sections": [
+        {
+          "title": "Syntax",
+          "subtopics": [
+            "Variables",
+            "Constants"
+          ]
+        },
+        {
+          "title": "Control Flow",
+          "subtopics": [
+            "if",
+            "loops"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Optionals",
+      "sections": [
+        {
+          "title": "Understanding Optionals",
+          "subtopics": [
+            "Unwrapping",
+            "Nil"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions and Closures",
+      "sections": [
+        {
+          "title": "Functions",
+          "subtopics": [
+            "Parameters",
+            "Return Types"
+          ]
+        },
+        {
+          "title": "Closures",
+          "subtopics": [
+            "Anonymous Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "sections": [
+        {
+          "title": "Classes and Structs",
+          "subtopics": [
+            "Properties",
+            "Methods"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Protocols and Extensions",
+      "sections": [
+        {
+          "title": "Protocols",
+          "subtopics": [
+            "Interfaces"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "iOS Development",
+      "sections": [
+        {
+          "title": "UIKit / SwiftUI",
+          "subtopics": [
+            "Views",
+            "Layouts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Networking",
+      "sections": [
+        {
+          "title": "API Calls",
+          "subtopics": [
+            "URLSession"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Persistence",
+      "sections": [
+        {
+          "title": "Data Storage",
+          "subtopics": [
+            "CoreData",
+            "UserDefaults"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Todo App"
+        },
+        {
+          "title": "API-based App"
+        }
+      ]
+    }
+  ]
+}

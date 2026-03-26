@@ -1,0 +1,221 @@
+{
+  "title": "Redis Mastery: High-Performance Caching and Data Structures",
+  "chapters": [
+    {
+      "title": "Introduction to Redis",
+      "sections": [
+        {"title": "What is Redis?"},
+        {
+          "title": "Why Redis?",
+          "subtopics": [
+            "In-memory Database",
+            "High Performance",
+            "Use Cases"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "sections": [
+        {
+          "title": "Installation",
+          "subtopics": [
+            "Local Setup",
+            "Docker Setup"
+          ]
+        },
+        {
+          "title": "Redis CLI",
+          "subtopics": [
+            "Basic Commands",
+            "Connecting to Server"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Data Structures",
+      "sections": [
+        {
+          "title": "Strings",
+          "subtopics": [
+            "SET, GET",
+            "INCR, DECR"
+          ]
+        },
+        {
+          "title": "Lists",
+          "subtopics": [
+            "LPUSH, RPUSH",
+            "LRANGE"
+          ]
+        },
+        {
+          "title": "Sets",
+          "subtopics": [
+            "SADD, SMEMBERS"
+          ]
+        },
+        {
+          "title": "Hashes",
+          "subtopics": [
+            "HSET, HGET"
+          ]
+        },
+        {
+          "title": "Sorted Sets",
+          "subtopics": [
+            "ZADD, ZRANGE"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Data Types",
+      "sections": [
+        {
+          "title": "HyperLogLog",
+          "subtopics": [
+            "Approximate Counting"
+          ]
+        },
+        {
+          "title": "Streams",
+          "subtopics": [
+            "Event Streaming",
+            "Consumer Groups"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Caching Strategies",
+      "sections": [
+        {
+          "title": "Cache Patterns",
+          "subtopics": [
+            "Cache Aside",
+            "Write Through",
+            "Write Back"
+          ]
+        },
+        {
+          "title": "TTL and Expiration",
+          "subtopics": [
+            "EXPIRE",
+            "Eviction Policies"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub and Messaging",
+      "sections": [
+        {
+          "title": "Publish/Subscribe",
+          "subtopics": [
+            "Channels",
+            "Subscribers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Persistence",
+      "sections": [
+        {
+          "title": "RDB",
+          "subtopics": [
+            "Snapshots"
+          ]
+        },
+        {
+          "title": "AOF",
+          "subtopics": [
+            "Append Only File"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scaling Redis",
+      "sections": [
+        {
+          "title": "Replication",
+          "subtopics": [
+            "Master-Slave"
+          ]
+        },
+        {
+          "title": "Clustering",
+          "subtopics": [
+            "Sharding",
+            "Redis Cluster"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "sections": [
+        {
+          "title": "Authentication",
+          "subtopics": [
+            "Passwords",
+            "ACL"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Network Isolation",
+            "TLS"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Redis with Node.js",
+      "sections": [
+        {
+          "title": "Connecting to Redis",
+          "subtopics": [
+            "ioredis",
+            "node-redis"
+          ]
+        },
+        {
+          "title": "Use Cases",
+          "subtopics": [
+            "Caching API Responses",
+            "Session Storage"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Rate Limiter",
+          "subtopics": [
+            "IP Throttling"
+          ]
+        },
+        {
+          "title": "Cache Layer",
+          "subtopics": [
+            "Speeding Up APIs"
+          ]
+        },
+        {
+          "title": "Real-time Notifications",
+          "subtopics": [
+            "Pub/Sub Implementation"
+          ]
+        }
+      ]
+    }
+  ]
+}

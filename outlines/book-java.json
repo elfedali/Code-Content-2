@@ -1,0 +1,161 @@
+{
+  "title": "Java Mastery: From Fundamentals to Enterprise Applications",
+  "chapters": [
+    {
+      "title": "Introduction to Java",
+      "sections": [
+        {"title": "What is Java?"},
+        {
+          "title": "Why Java?",
+          "subtopics": [
+            "Platform Independence",
+            "Strong Ecosystem"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Java Basics",
+      "sections": [
+        {
+          "title": "Syntax and Structure",
+          "subtopics": [
+            "Variables",
+            "Data Types",
+            "Operators"
+          ]
+        },
+        {
+          "title": "Control Flow",
+          "subtopics": [
+            "if/else",
+            "loops"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "sections": [
+        {
+          "title": "Classes and Objects",
+          "subtopics": [
+            "Constructors",
+            "Methods"
+          ]
+        },
+        {
+          "title": "OOP Principles",
+          "subtopics": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Collections Framework",
+      "sections": [
+        {
+          "title": "List, Set, Map",
+          "subtopics": [
+            "ArrayList",
+            "HashMap"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exception Handling",
+      "sections": [
+        {
+          "title": "Try/Catch",
+          "subtopics": [
+            "Checked vs Unchecked"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "File I/O",
+      "sections": [
+        {
+          "title": "Reading/Writing Files",
+          "subtopics": [
+            "Streams",
+            "Buffers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Multithreading",
+      "sections": [
+        {
+          "title": "Threads",
+          "subtopics": [
+            "Runnable",
+            "Synchronization"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JDBC and Databases",
+      "sections": [
+        {
+          "title": "Database Connection",
+          "subtopics": [
+            "CRUD Operations"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spring Framework",
+      "sections": [
+        {
+          "title": "Spring Basics",
+          "subtopics": [
+            "Dependency Injection"
+          ]
+        },
+        {
+          "title": "Spring Boot",
+          "subtopics": [
+            "REST APIs"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "sections": [
+        {
+          "title": "JUnit",
+          "subtopics": [
+            "Unit Testing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "REST API",
+          "subtopics": [
+            "CRUD App"
+          ]
+        },
+        {
+          "title": "Microservice",
+          "subtopics": [
+            "Spring Boot Service"
+          ]
+        }
+      ]
+    }
+  ]
+}

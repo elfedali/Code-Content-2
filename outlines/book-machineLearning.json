@@ -1,0 +1,146 @@
+{
+  "title": "Machine Learning Mastery: From Basics to Real-World AI Systems",
+  "chapters": [
+    {
+      "title": "Introduction to Machine Learning",
+      "sections": [
+        {"title": "What is Machine Learning?"},
+        {
+          "title": "Types of Learning",
+          "subtopics": [
+            "Supervised",
+            "Unsupervised",
+            "Reinforcement Learning"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mathematics Foundations",
+      "sections": [
+        {
+          "title": "Linear Algebra",
+          "subtopics": [
+            "Vectors",
+            "Matrices"
+          ]
+        },
+        {
+          "title": "Statistics",
+          "subtopics": [
+            "Mean",
+            "Variance"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Preprocessing",
+      "sections": [
+        {
+          "title": "Cleaning Data",
+          "subtopics": [
+            "Missing Values",
+            "Outliers"
+          ]
+        },
+        {
+          "title": "Feature Engineering",
+          "subtopics": [
+            "Scaling",
+            "Encoding"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Supervised Learning",
+      "sections": [
+        {
+          "title": "Regression",
+          "subtopics": [
+            "Linear Regression"
+          ]
+        },
+        {
+          "title": "Classification",
+          "subtopics": [
+            "Logistic Regression",
+            "Decision Trees"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unsupervised Learning",
+      "sections": [
+        {
+          "title": "Clustering",
+          "subtopics": [
+            "K-Means"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Model Evaluation",
+      "sections": [
+        {
+          "title": "Metrics",
+          "subtopics": [
+            "Accuracy",
+            "Precision",
+            "Recall"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deep Learning",
+      "sections": [
+        {
+          "title": "Neural Networks",
+          "subtopics": [
+            "Layers",
+            "Activation Functions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tools",
+      "sections": [
+        {
+          "title": "Libraries",
+          "subtopics": [
+            "TensorFlow",
+            "PyTorch"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "sections": [
+        {
+          "title": "Serving Models",
+          "subtopics": [
+            "APIs",
+            "Cloud Deployment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real Projects",
+      "sections": [
+        {
+          "title": "Recommendation System"
+        },
+        {
+          "title": "Spam Classifier"
+        }
+      ]
+    }
+  ]
+}
