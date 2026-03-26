@@ -1,0 +1,374 @@
+{
+  "title": "Distributed Systems Mastery: Building Scalable and Reliable Systems",
+  "chapters": [
+    {
+      "title": "Introduction to Distributed Systems",
+      "sections": [
+        {"title": "What is a Distributed System?"},
+        {
+          "title": "Why Distributed Systems?",
+          "subtopics": [
+            "Scalability",
+            "Fault Tolerance",
+            "High Availability"
+          ]
+        },
+        {
+          "title": "Examples",
+          "subtopics": [
+            "Google",
+            "Netflix",
+            "Uber"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System Models",
+      "sections": [
+        {
+          "title": "Types of Systems",
+          "subtopics": [
+            "Centralized",
+            "Distributed",
+            "Decentralized"
+          ]
+        },
+        {
+          "title": "Network Models",
+          "subtopics": [
+            "Latency",
+            "Bandwidth",
+            "Partitions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Communication",
+      "sections": [
+        {
+          "title": "Inter-process Communication",
+          "subtopics": [
+            "HTTP/REST",
+            "gRPC",
+            "Message Queues"
+          ]
+        },
+        {
+          "title": "Synchronous vs Asynchronous",
+          "subtopics": [
+            "Blocking",
+            "Non-blocking"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Management",
+      "sections": [
+        {
+          "title": "Replication",
+          "subtopics": [
+            "Leader-Follower",
+            "Multi-Leader",
+            "Leaderless"
+          ]
+        },
+        {
+          "title": "Partitioning (Sharding)",
+          "subtopics": [
+            "Hash-based",
+            "Range-based"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consistency Models",
+      "sections": [
+        {
+          "title": "Strong Consistency",
+          "subtopics": [
+            "Linearizability"
+          ]
+        },
+        {
+          "title": "Eventual Consistency",
+          "subtopics": [
+            "BASE Model"
+          ]
+        },
+        {
+          "title": "CAP Theorem",
+          "subtopics": [
+            "Consistency",
+            "Availability",
+            "Partition Tolerance"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fault Tolerance",
+      "sections": [
+        {
+          "title": "Failure Types",
+          "subtopics": [
+            "Crash Failures",
+            "Network Failures"
+          ]
+        },
+        {
+          "title": "Recovery Strategies",
+          "subtopics": [
+            "Retries",
+            "Replication",
+            "Failover"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consensus Algorithms",
+      "sections": [
+        {
+          "title": "Why Consensus Matters",
+          "subtopics": [
+            "Leader Election",
+            "Consistency"
+          ]
+        },
+        {
+          "title": "Algorithms",
+          "subtopics": [
+            "Paxos",
+            "Raft"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Distributed Transactions",
+      "sections": [
+        {
+          "title": "Transaction Models",
+          "subtopics": [
+            "ACID",
+            "BASE"
+          ]
+        },
+        {
+          "title": "Protocols",
+          "subtopics": [
+            "Two-Phase Commit",
+            "Saga Pattern"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scalability",
+      "sections": [
+        {
+          "title": "Horizontal Scaling",
+          "subtopics": [
+            "Load Balancing",
+            "Auto Scaling"
+          ]
+        },
+        {
+          "title": "Caching",
+          "subtopics": [
+            "Redis",
+            "CDN"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Microservices Architecture",
+      "sections": [
+        {
+          "title": "Service Design",
+          "subtopics": [
+            "Bounded Context",
+            "API Contracts"
+          ]
+        },
+        {
+          "title": "Communication",
+          "subtopics": [
+            "REST",
+            "Event-driven"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Messaging Systems",
+      "sections": [
+        {
+          "title": "Queues and Streams",
+          "subtopics": [
+            "RabbitMQ",
+            "Kafka"
+          ]
+        },
+        {
+          "title": "Event-driven Systems",
+          "subtopics": [
+            "Pub/Sub",
+            "Event Sourcing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Observability",
+      "sections": [
+        {
+          "title": "Logging",
+          "subtopics": [
+            "Centralized Logs"
+          ]
+        },
+        {
+          "title": "Monitoring",
+          "subtopics": [
+            "Metrics",
+            "Alerts"
+          ]
+        },
+        {
+          "title": "Tracing",
+          "subtopics": [
+            "Distributed Tracing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security in Distributed Systems",
+      "sections": [
+        {
+          "title": "Authentication",
+          "subtopics": [
+            "OAuth",
+            "JWT"
+          ]
+        },
+        {
+          "title": "Network Security",
+          "subtopics": [
+            "TLS",
+            "mTLS"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Service Mesh",
+      "sections": [
+        {
+          "title": "What is a Service Mesh?",
+          "subtopics": [
+            "Sidecar Pattern",
+            "Traffic Control"
+          ]
+        },
+        {
+          "title": "Tools",
+          "subtopics": [
+            "Istio",
+            "Linkerd"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cloud and Infrastructure",
+      "sections": [
+        {
+          "title": "Cloud Platforms",
+          "subtopics": [
+            "AWS",
+            "GCP",
+            "Azure"
+          ]
+        },
+        {
+          "title": "Containers and Orchestration",
+          "subtopics": [
+            "Docker",
+            "Kubernetes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real-World System Design",
+      "sections": [
+        {
+          "title": "Design a URL Shortener",
+          "subtopics": [
+            "Scaling Reads/Writes"
+          ]
+        },
+        {
+          "title": "Design a Ride-sharing Backend",
+          "subtopics": [
+            "Real-time Location",
+            "Matching Algorithm"
+          ]
+        },
+        {
+          "title": "Design a Chat System",
+          "subtopics": [
+            "WebSockets",
+            "Message Delivery"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Pitfalls",
+      "sections": [
+        {
+          "title": "Distributed System Challenges",
+          "subtopics": [
+            "Network Failures",
+            "Data Inconsistency"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "subtopics": [
+            "Idempotency",
+            "Retries",
+            "Timeouts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Becoming a Distributed Systems Engineer",
+      "sections": [
+        {
+          "title": "Mindset",
+          "subtopics": [
+            "Think in Trade-offs",
+            "Design for Failure"
+          ]
+        },
+        {
+          "title": "Learning Path",
+          "subtopics": [
+            "Projects",
+            "System Design Practice"
+          ]
+        }
+      ]
+    }
+  ]
+}
